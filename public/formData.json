@@ -1,0 +1,30 @@
+{
+  "locationList": [
+    "Chicago, IL",
+    "St. Louis Park, MN",
+    "Mountain View, CA",
+    "Chicago, IL",
+    "Santa Clara, CA",
+    "Secaucus, NJ",
+    "McLean, VA"
+  ],
+  "dateList": [
+    "Today, February 02",
+    "Thursday, February 03",
+    "Friday, February 04",
+    "Saturday, February 05",
+    "Sunday, February 06",
+    "Monday, February 07"
+  ],
+  "movieList": [
+    "Beanpole",
+    "Brahms: The Boy II",
+    "Once Were Brothers: Robbie Robertson and the Band",
+    "The Rhythm Section",
+    "Shaun The Sheep Movie: Farmageddon",
+    "Metallica & San Francisco Symphony: S&M2",
+    "The Gentleman"
+  ],
+  "timeList": ["3.30 pm", "4.15 pm", "6.20 pm", "7.40 pm", "9.30 pm"],
+  "deliveryList": ["At Showtime", "15mins Before Showtime"]
+}

@@ -1,0 +1,10 @@
+<svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Current location">
+<path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M13 23.5C18.5228 23.5 23 19.0228 23 13.5C23 7.97715 18.5228 3.5 13 3.5C7.47715 3.5 3 7.97715 3 13.5C3 19.0228 7.47715 23.5 13 23.5Z" stroke="#b42e34" stroke-width="2"/>
+<path id="Oval_2" d="M13 17.5C15.2091 17.5 17 15.7091 17 13.5C17 11.2909 15.2091 9.5 13 9.5C10.7909 9.5 9 11.2909 9 13.5C9 15.7091 10.7909 17.5 13 17.5Z" stroke="#b42e34" stroke-width="2"/>
+<path id="Line 2" d="M13 24V27" stroke="#b42e34" stroke-width="2" stroke-linecap="round"/>
+<path id="Line 2_2" d="M13 0V3" stroke="#b42e34" stroke-width="2" stroke-linecap="round"/>
+<path id="Line 2_3" d="M0 13H3" stroke="#b42e34" stroke-width="2" stroke-linecap="round"/>
+<path id="Line 2_4" d="M23 13H26" stroke="#b42e34" stroke-width="2" stroke-linecap="round"/>
+</g>
+</svg>

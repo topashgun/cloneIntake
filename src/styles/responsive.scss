@@ -1,0 +1,3694 @@
+/* 
+	** responsive.css ** 
+*/
+@import "variables", "mixin";
+
+@media (min-width: 768px) {
+  /* F&B List Block */
+  .pcpFnbblock #pcpfnbCategorywrapper.pcpfnbCategorysticky .pcpfnbCategory .pcpfnbcInner {
+    //width: 720px;
+    width: 696px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .moreDate:hover {
+    font-family: $fontM;
+  }
+  .tabSelectDetails {
+    max-width: 100%;
+  }
+  .extrasSweetAlert {
+    flex-direction: column;
+    .image {
+      margin-bottom: 10px;
+    }
+  }
+  .swal2-html-container {
+    margin: 0;
+    padding: 0 10px 10px 10px;
+  }
+}
+@media (min-width: 992px) {
+  .pcPanel .pcpBody .pcpbInner .pcpbiColswrap .pcpbiCols.pcpbiColright {
+    display: block !important;
+  }
+  /* F&B List Block */
+  .pcpFnbblock #pcpfnbCategorywrapper.pcpfnbCategorysticky .pcpfnbCategory .pcpfnbcInner {
+    //width: 940px;
+    width: 936px;
+  }
+  .pcpbBottomstrap {
+    display: none !important;
+  }
+  /* Cart jerk issue: On Modal open/close.*/
+  body.modal-open .pcPanel .pcpBody .pcpbInner .pcpbiColswrap .pcpbiCols.pcpbiColright.sticky .pcpbicrInner {
+    margin-right: 17px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* F&B List Block */
+  .pcpFnbblock #pcpfnbCategorywrapper.pcpfnbCategorysticky .pcpfnbCategory .pcpfnbcInner {
+    //width: 1140px;
+    width: 1116px;
+  }
+}
+
+@media (min-width: 1366px) {
+  /* Bootstrap Container */
+  .container {
+    //max-width: 1336px; //1306(width)+30(gutter space)
+    //max-width: 1230px; //1200(width)+30(gutter space)
+    max-width: 1224px; //1200(width)+24(gutter space)
+  }
+
+  .pcpFnbblock.pcpfnbCategorySticky .pcpfnbCategory .pcpfnbcInner {
+    width: 1336px;
+  }
+
+  /* F&B List Block */
+  .pcpFnbblock #pcpfnbCategorywrapper.pcpfnbCategorysticky .pcpfnbCategory .pcpfnbcInner {
+    width: 1306px;
+    width: 1200px;
+  }
+}
+
+/* @media (min-width:1440px) { */
+@media (min-width: 1600px) {
+  /* Bootstrap Container */
+  .container {
+    //max-width: 1370px; //1340(width)+30(gutter space)
+    max-width: 1364px; //1340(width)+24(gutter space)*
+  }
+
+  /* F&B List Block */
+  .pcpFnbblock #pcpfnbCategorywrapper.pcpfnbCategorysticky .pcpfnbCategory .pcpfnbcInner {
+    width: 1340px;
+  }
+}
+
+@media (max-width: 1919px) {
+  /* Page Content > Panels(Page layout) */
+  .pcPanel {
+    padding: 34px 0;
+  }
+  .pcPanel .pcpHead {
+    padding: 12px 0;
+  }
+  .pcPanel .pcpHead .pcphInner h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .pcPanel .pcpBody {
+    padding: 0px 0;
+  }
+
+  /*Confirm F&B Booking*/
+  .pcpfnbConfirmbooking {
+    max-width: 694px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner {
+    padding: 15px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner h1 {
+    font-size: 26px;
+    line-height: 28px;
+    margin: 0 0 19px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner p {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 6px 0;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner .btnswrap {
+    padding: 27px 0 0;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner .btnswrap .btn.btndefault,
+  .pcpfnbConfirmbooking .pcpfnbcbInner .btnswrap .btn.btnsecondary {
+    line-height: 30px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner .btnswrap .btn.btntext {
+    padding: 0 0 9px;
+    margin: 5px 0 0 36px;
+  }
+  .pcpfnbConfirmbooking {
+    .pcpfnbcbInner {
+      h1 {
+        margin: 0 0 27px;
+      }
+      h2 {
+        padding: 6px 0;
+      }
+      h3 {
+        padding: 27px 0 0;
+      }
+      .btnswrap {
+        padding: 15px 0 0;
+      }
+    }
+  }
+
+  /*Location Dropdown*/
+  .pcpLocation {
+    padding: 23px 0 0;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .roundBoxshadowed {
+    padding: 30px;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .btnswrap {
+    padding: 15px 0 30px;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .pclList {
+    padding: 20px 0 0;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .pclList h5 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .pclList ul {
+    padding: 5px 0 0;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .pclList ul li {
+    padding: 0;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .pclList ul li a {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  /* Page Content > Panels(Page layout) > 2 Column Layout */
+  .pcPanel .pcpBody .pcpbInner .pcpbiColswrap .pcpbiCols.pcpbiColleft .pcpbiclInner {
+    padding: 15px 0;
+  }
+  .pcPanel .pcpBody .pcpbInner .pcpbiColswrap .pcpbiCols.pcpbiColright .pcpbicrInner {
+    padding: 15px 0;
+  }
+
+  /* F&B List Block */
+  .pcpFnbblock #pcpfnbCategorywrapper.pcpfnbCategorysticky {
+    padding: 60px 0 0;
+  }
+  .pcpFnbblock .pcpfnbCategory {
+    padding: 12px 0;
+    padding-bottom: 0;
+    margin: 0 0 12px;
+  }
+  .pcpFnbblock .pcpfnbCategory ul li {
+    padding: 0 23px;
+  }
+  .pcpFnbblock .pcpfnbCategory ul li a {
+    font-size: 22px;
+    //// line-height: 26px;
+    line-height: 22px;
+  }
+  .pcpFnbblock .pcpfnbCategory .tse-scrollable.horizontal {
+    height: 36px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li {
+    padding: 38px 0 0;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead h2 {
+    font-size: 24px;
+    line-height: 28px;
+    padding: 15px 30px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead h2 span::after {
+    bottom: -15px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols h3 {
+    font-size: 26px;
+    line-height: 32px;
+    margin: 0 0 8px;
+  }
+  /*.pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols > p{font-size:18px;line-height:28px;padding:8px 0 12px;}*/
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols > p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 8px 0 12px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap {
+    padding: 12px 0 0;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap p {
+    font-size: 26px;
+    line-height: 26px;
+    padding: 9px 0;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap p span.strikethrough {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap p span.offerpercent {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnunavail {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  /*.pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary span::after{height:28px;} Hided14072020*/
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnunavail {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  /* Column Right > Cart */
+  .pcpCart h3 {
+    font-size: 22px;
+    line-height: 28px;
+    margin: 15px 0;
+  }
+  /* Column Right > Cart > Cart Initial/Empty Block */
+  .pcpCart .pcpCartempty .pcpceInner {
+    padding: 20px 0;
+  }
+  .pcpCart .pcpCartempty .pcpceInner h3 {
+    margin-bottom: 45px;
+  }
+  /* Column Right > Cart > Booking Summery */
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer {
+    padding: 15px 0 0px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows {
+    padding: 30px 0 0;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows ul li {
+    padding: 19px 0 0;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows.pcpbscrFNB ul li {
+    padding: 23px 0 0;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows.pcpbscrSubtotal ul li {
+    padding: 10px 0;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows h4 {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 12px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows.pcpbscrFNB h4.childSpanWrap {
+    line-height: 26px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows h5 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows p {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsTotalstrap h5,
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsTotalstrap p {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .pcpCart .pcpcAction .btnswrap .btn.btndefault {
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  /* F&B Modifier Popup */
+  .fnbmodifierModal .modal-header .modalClose {
+    top: 25px;
+    right: 25px;
+  }
+  .fnbmodifierModal .modal-body {
+    padding: 25px;
+  }
+  .fnbmodifierModal .fnbItemdesc h2 {
+    font-size: 22px;
+    line-height: 28px;
+    padding-right: 95px;
+    margin: 0 0 10px;
+  }
+  .fnbmodifierModal.promoffer .fnbItemdesc h2 {
+    margin: 0 0 25px;
+  }
+  .fnbmodifierModal.promoffer .fnbItemdesc h2 span .offerpercent {
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 5px;
+  }
+  .fnbmodifierModal .fnbItemdesc p {
+    font-size: 15px;
+    line-height: 21px;
+    padding: 5px 0;
+    letter-spacing: 0.02em;
+  }
+  .fnbmodifierModal .fnbItemdesc {
+    padding: 0 0 10px;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows {
+    padding: 10px 0;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows h3 {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 5px;
+  }
+
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li .customCheckbox label,
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li .customRadio label {
+    padding-right: 34px;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li h4 span {
+    padding: 3px 0 0;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li .subItems h4 {
+    margin: 0;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li .subItems h4 i {
+    right: 5px;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li .subItems ul {
+    padding-bottom: 5px;
+    padding-left: 10px;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li .subItems ul li {
+    padding: 10px 0 0;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows .form-group {
+    padding: 10px 0 0;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows .form-group .form-control {
+    height: 125px;
+    padding: 15px;
+  }
+  .fnbmodifierModal .fnbQuantity {
+    padding: 10px 25px;
+  }
+  .fnbmodifierModal .fnbQuantity h5 {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 5px 0;
+  }
+  .fnbmodifierModal .fnbmmAction .btnswrap .btn.btndefault {
+    font-size: 22px;
+    line-height: 30px;
+    padding: 15px;
+  }
+
+  /* Order Review */
+  .pcbOrderreview .pcborInner .pcborRows {
+    padding: 10px 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows .pcborrHead h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows .pcborrBody {
+    padding: 10px 0 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows .pcborrBody h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  /* Order Review > Add  Tips */
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrHead h2 {
+    line-height: 22px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrBody .ratInner ul {
+    padding: 0 0 20px;
+    margin: 0 -15px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrBody .ratInner ul li {
+    padding: 0 15px;
+    margin-top: 10px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrBody .ratInner ul li .roundBoxshadowed {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrBody .ratInner ul li > p {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 15px 0 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrBody .ratInner .ratiOthers .form-group {
+    padding: 30px 0 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrBody .ratInner .ratiOthers .form-group > label {
+    font-size: 16px;
+    line-height: 45px;
+    top: 30px;
+  }
+  /* Order Review > User(Your) Details */
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .customCheckbox label {
+    padding-left: 39px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .rudPasswprd .form-group .form-control {
+    padding-right: 150px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .rudPasswprd .form-group .btnswrap a.btn.btndefault {
+    line-height: 29px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .rudSuccess p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .rudSuccess p span {
+    padding: 0 0 5px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .rudSuccess p a {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  /* Order Review > Rewards */
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .rrInner {
+    padding: 5px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .rrInner > p {
+    font-size: 22px;
+    line-height: 28px;
+    padding: 84px 0 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .rrInner > p span {
+    padding: 10px 0 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .rrInner .btnswrap {
+    padding: 20px 0 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .rrInner .btnswrap .btn.btndefault {
+    min-width: 160px;
+    font-size: 20px;
+    line-height: 29px;
+    margin-left: 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .rrInner .btnswrap p {
+    font-size: 22px;
+    line-height: 28px;
+    padding: 9px 0 8px;
+  }
+  /* Order Review > Alcohol Info and Terms & Conditions  */
+  .pcbOrderreview .pcborInner .pcborRows.rowBottom .pcborrBody .rbAlcoholinfo {
+    padding: 23px;
+    margin: 0 0 20px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowBottom .pcborrBody .rbAlcoholinfo h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowBottom .pcborrBody .rbAlcoholinfo h4 span {
+    padding: 0 0 0 20px;
+  }
+
+  /* Gift card changes */
+  .pcbOrderreviewwrap .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows .pcpPrice .removeGC {
+    width: 21px;
+    height: 21px;
+    margin-top: -12px;
+  }
+
+  /* Specials Strap */
+  .specialsStrap {
+    padding: 0 0 35px;
+  }
+  .specialsStrap .ssH2 {
+    max-width: unset;
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .specialsStrap .ssCols {
+    // max-width: 850px;
+  }
+  /*Member Login*/
+  .switchStrap {
+    // padding: 0 0 50px;
+  }
+  .switchStrap .switchMemberLogin .smlInner .smliCols p.afterLogin span.userInfo {
+    font-size: 22px;
+  }
+  .switchStrap .switchMemberLogin .smlInner .smliCols p.afterLogin span.userInfo img {
+    margin-right: 10px;
+  }
+  /*Left Column > F&B Category Accordion*/
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .iconDeliveryMode {
+    height: 44px;
+  }
+  /* Select Date, Movie & Time*/
+  .tabSelectDetails .tsdSelection h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 1599px) {
+  /* Page Header Styles */
+  .pageHeader .phInner {
+    padding: 10px 0;
+  }
+  body.phSticky .pageHeader .phInner {
+    padding: 10px 0;
+  }
+
+  /* Page Content Styles */
+  .pageContent {
+    padding: 117px 0 0;
+  }
+  body.phSticky .pageContent {
+    padding: 94px 0 0;
+  }
+
+  /* Page Content > Panels(Page layout) */
+  .pcPanel {
+    padding: 26px 0;
+  }
+  .pcPanel .pcpHead {
+    padding: 9px 0;
+  }
+  .pcPanel .pcpHead .pcphInner h1 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .pcPanel .pcpBody {
+    padding: 0px 0;
+  }
+
+  /*Confirm F&B Booking*/
+  .pcpfnbConfirmbooking {
+    max-width: 600px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner {
+    padding: 12px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner h1 {
+    font-size: 24px;
+    line-height: 26px;
+    margin: 0 0 15px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner p {
+    padding: 5px 0;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner .btnswrap {
+    padding: 20px 0 0;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner .btnswrap .btn.btndefault,
+  .pcpfnbConfirmbooking .pcpfnbcbInner .btnswrap .btn.btnsecondary {
+    min-width: 180px;
+    line-height: 26px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner .btnswrap .btn.btntext {
+    padding: 0 0 5px;
+    margin: 6px 0 0 27px;
+  }
+  .pcpfnbConfirmbooking {
+    .pcpfnbcbInner {
+      h1 {
+        margin: 0 0 20px;
+      }
+      h2 {
+        font-size: 20px;
+        line-height: 26px;
+        padding: 5px 0;
+      }
+      h3 {
+        font-size: 18px;
+        line-height: 24px;
+        padding: 20px 0 0;
+      }
+      p {
+        font-size: 16px;
+        line-height: 22px;
+      }
+      .btnswrap {
+        padding: 10px 0 0;
+      }
+    }
+  }
+
+  /*Location Dropdown*/
+  .pcpLocation {
+    max-width: 500px;
+    padding: 20px 0 0;
+  }
+  .pcpLocation .pcplDropdown .pcplddHead a {
+    /*font-size:20px;padding:10px 20px;*/
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .roundBoxshadowed {
+    /*padding:20px;*/
+    padding: 15px;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .btnswrap {
+    /*padding:10px 0 20px;*/
+    padding: 7px 0 15px;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .btnswrap .btn.btndefault {
+    min-width: 210px;
+    font-size: 14px; /*line-height:24px; Hided26062020*/
+    padding: 5px 10px;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .pclList {
+    /*padding:15px 0 0;*/
+    padding: 10px 0 0;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .pclList h5 {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 5px 0;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .pclList ul li a {
+    /*font-size:20px;line-height:26px;*/
+    font-size: 18px;
+    line-height: 22px;
+    padding: 5px 0;
+    letter-spacing: 0.01em;
+  }
+
+  /* Page Content > Panels(Page layout) > 2 Column Layout */
+  .pcPanel .pcpBody .pcpbInner .pcpbiColswrap {
+    margin: 0 -15px;
+  }
+  .pcPanel .pcpBody .pcpbInner .pcpbiColswrap .pcpbiCols {
+    padding: 0 15px;
+  }
+  .pcPanel .pcpBody .pcpbInner .pcpbiColswrap .pcpbiCols.pcpbiColleft {
+    width: 57%;
+  }
+  .pcPanel .pcpBody .pcpbInner .pcpbiColswrap .pcpbiCols.pcpbiColright {
+    width: 43%;
+  }
+
+  /* F&B List Block */
+  .pcpFnbblock #pcpfnbCategorywrapper.pcpfnbCategorysticky {
+    /*padding:54px 0 0;*/
+    padding: 50px 0 0;
+  }
+  .pcpFnbblock #pcpfnbCategorywrapper.pcpfnbCategorysticky .pcpfnbCategory {
+    top: 93px;
+  }
+  .pcpFnbblock .pcpfnbCategory {
+    padding: 10px 0 0;
+    margin: 0;
+  }
+  .pcpFnbblock .pcpfnbCategory ul li {
+    /*padding:0 20px;*/
+    padding: 0 15px;
+  }
+  .pcpFnbblock .pcpfnbCategory ul li a {
+    font-size: 20px;
+    //// line-height: 24px;
+    //// font-size: 18px;
+    //// line-height: 22px;
+    line-height: 20px;
+    padding: 0 0 8px;
+  }
+  .pcpFnbblock .pcpfnbCategory .tse-scrollable.horizontal {
+    height: 34px;
+    height: 30px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li {
+    padding: 30px 0 0;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead figure {
+    min-height: 336px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead h2 {
+    font-size: 22px;
+    line-height: 26px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 15px 20px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead h2 span:before {
+    width: 22px;
+    height: 12px;
+    background-size: 22px auto;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilcwColrgt {
+    width: 526px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols h3 {
+    /*font-size:22px;line-height:28px;*/
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0 0 6px;
+    letter-spacing: 0.01em;
+  }
+  /*.pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols > p{font-size:16px;line-height:26px;line-height:22px;padding:6px 0 9px;letter-spacing:0.02em;}*/
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols > p {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 6px 0 9px;
+    letter-spacing: 0.02em;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap {
+    padding: 9px 0 0;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap p {
+    /*font-size:22px;line-height:22px;*/
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px 0;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap p span.strikethrough {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap p span.offerpercent {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary {
+    min-width: 100px; /*font-size:20px;line-height:26px;*/
+    font-size: 18px;
+    line-height: 24px;
+  }
+  /*.pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary span::after{/ *height:26px;* /height:24px;background-size:16px auto;} Hided14072020*/
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary span:before,
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary span:after {
+    width: 16px;
+    background-size: 16px 16px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnunavail {
+    min-width: 100px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnunavail span:before,
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnunavail span:after {
+    width: 16px;
+    background-size: 16px 16px;
+  }
+
+  /* Column Right > Cart */
+  .pcpCart h3 {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 10px 0;
+  }
+  .pcpCart .pcpCartempty .pcpceInner h3 {
+    margin-bottom: 30px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows h4 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows.pcpbscrFNB h4.childSpanWrap {
+    line-height: 24px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows h5 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows p {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsTotalstrap h5,
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsTotalstrap p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .pcpCart .pcpcAction .btnswrap .btn.btndefault {
+    font-size: 22px; /*line-height:34px;*/
+    line-height: 30px;
+    letter-spacing: 0.02em;
+  }
+
+  /* Order Review */
+  .pcbOrderreview .pcborInner .pcborRows .pcborrHead h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows .pcborrHead h2 span {
+    font-size: 16px;
+    margin: 15px 0 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows .pcborrBody {
+    padding: 7px 0;
+  }
+
+  .pcbOrderreview .pcborInner .pcborRows.rowSelectmovie .pcborrBody {
+    padding: 7px 0 0;
+  }
+  /* Order Review > Add  Tips */
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrHead h2 {
+    line-height: 20px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrHead h2::before {
+    width: 18px;
+    height: 30px;
+    background-size: 18px auto;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrBody .ratInner .ratiOthers .form-group {
+    padding: 20px 0 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrBody .ratInner .ratiOthers .form-group > label {
+    line-height: 42px;
+    top: 20px;
+  }
+  /* Order Review > User(Your) Details */
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .rudPasswprd .form-group .btnswrap a.btn.btndefault {
+    line-height: 26px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .rudSuccess p a {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  /* Order Review > Rewards */
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .rrInner {
+    padding: 3px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .rrInner > p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .rrInner .btnswrap {
+    padding: 15px 0 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .rrInner .btnswrap .btn.btndefault {
+    min-width: 160px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .rrInner .btnswrap p {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 8px 0;
+  }
+  /* Order Review > Alcohol Info and Terms & Conditions  */
+  .pcbOrderreview .pcborInner .pcborRows.rowBottom .pcborrBody .rbAlcoholinfo {
+    padding: 18px;
+  }
+
+  /* Gift card changes */
+  .paymentMethod-cont .panel-default > .panel-heading + .panel-collapse > .panel-body.giftCard-body .btnswrap .btn.btndefault {
+    line-height: 26px;
+    min-width: 110px;
+  }
+  .paymentMethod-cont .panel-default > .panel-heading + .panel-collapse > .panel-body.giftCard-body .form-group > p.success-txt {
+    font-size: 17px;
+    padding-bottom: 25px;
+  }
+  .pcbOrderreviewwrap .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows .pcpPrice .removeGC {
+    width: 19px;
+    height: 19px;
+  }
+
+  /*Header > Location*/
+  .pageHeader .pcpLocation .pcplDropdown .pcplddBody .roundBoxshadowed {
+    padding: 20px;
+  }
+  .pageHeader .pcpLocation .pcplDropdown .pcplddBody .btnswrap {
+    padding: 0 0 20px;
+  }
+  .pageHeader .pcpLocation .pcplDropdown .pcplddBody .pclList ul li {
+    margin: 0 -15px;
+  }
+  .pageHeader .pcpLocation .pcplDropdown .pcplddBody .pclList ul li a {
+    padding: 0 15px;
+  }
+  /* Specials Strap */
+  .specialsStrap {
+    padding: 0 0 27px;
+  }
+  .specialsStrap .ssH2 {
+    max-width: unsert;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .specialsStrap .rcBox h3 {
+    max-width: 90px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .specialsStrap .rcBox .rcDiscount {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+    line-height: 16px;
+    @include cssBorderRadius(21px);
+  }
+  .specialsStrap .rcBox .priceInfo {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .specialsStrap .rcBox .priceInfo span.specialPrice {
+    font-size: 19px;
+  }
+  .specialsStrap .columnRight .rcBox.rcbColumn {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .specialsStrap .rcBox.rcbColumn h2 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .specialsStrap .rcBox.rcbColumn p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .specialsStrap .rcBox.rcbColumn p span {
+    font-size: 16px;
+  }
+  .specialsStrap .ssCols {
+    // max-width: 760px;
+  }
+  /*Member Login*/
+  .switchStrap {
+    // padding: 0 0 35px;
+  }
+  .switchStrap .switchMemberLogin {
+    padding: 15px 0;
+  }
+  .switchStrap .switchMemberLogin .smlInner {
+    padding: 12px 0;
+  }
+  .switchStrap .switchMemberLogin .smlInner .smliCols p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .switchStrap .switchMemberLogin .smlInner .smliCols p.afterLogin span.userInfo {
+    font-size: 20px;
+  }
+  .switchStrap .switchMemberLogin .smlInner .smliCols p.afterLogin span.userInfo img {
+    margin-right: 10px;
+  }
+  /*Left Column > F&B Category Accordion*/
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .iconDeliveryMode {
+    height: 40px;
+  }
+}
+
+@media (max-width: 1439px) {
+  /* F&B Modifier Popup */
+  /*.fnbmodifierModal .modal-header .modalClose{width:21px;height:23px;background-size:21px auto;top:20px;right:20px;}*/
+  .fnbmodifierModal .modal-body {
+    padding: 20px;
+  }
+  .fnbmodifierModal .fnbItemdesc h2 {
+    font-size: 20px;
+    line-height: 26px;
+    padding-right: 85px;
+    margin: 0 0 10px;
+    letter-spacing: 0.02em;
+  }
+  .fnbmodifierModal.promoffer .fnbItemdesc h2 {
+    margin: 0 0 20px;
+  }
+  .fnbmodifierModal .fnbItemdesc p {
+    /*font-size:16px;line-height:22px;*/
+    padding: 5px 0;
+  }
+  .fnbmodifierModal .fnbItemdesc {
+    padding: 0 0 10px;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows {
+    padding: 10px 0;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li h4 {
+    // font-size: 18px;
+    // line-height: 24px;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li h4 span {
+    padding: 2px 0 0;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows .form-group {
+    padding: 10px 0 0;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows .form-group .form-control {
+    height: 100px;
+    font-size: 16px;
+    padding: 15px;
+  }
+  .fnbmodifierModal .fnbQuantity {
+    padding: 10px 20px;
+  }
+  .fnbmodifierModal .fnbQuantity h5 {
+    font-size: 22px;
+    line-height: 28px;
+    padding: 3px 0;
+  }
+  .fnbmodifierModal .fnbmmAction .btnswrap .btn.btndefault {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  /* Order Review */
+  /* Order Review > User(Your) Details */
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .customCheckbox label {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+}
+
+@media (max-width: 1365px) {
+  /* Page Content > Panels(Page layout) */
+  .pcPanel {
+    padding: 20px 0;
+  }
+  .pcPanel .pcpHead {
+    padding: 5px 0;
+  }
+  .pcPanel .pcpHead .pcphInner h1 {
+    /*font-size:24px;line-height:30px*/
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  }
+  .pcPanel .pcpBody {
+    padding: 0px 0;
+  }
+
+  /*Location Dropdown*/
+  .pcpLocation {
+    /*max-width:500px;*/
+    padding: 10px 0 0;
+  }
+  /*.pcpLocation .pcplDropdown .pcplddHead a{font-size:18px;}
+  .pcpLocation .pcplDropdown .pcplddBody .pclList ul li a{font-size:20px;line-height:26px;}*/
+
+  /* F&B List Block */
+  .pcpFnbblock #pcpfnbCategorywrapper.pcpfnbCategorysticky {
+    padding: 48px 0 0;
+  }
+  .pcpFnbblock .pcpfnbCategory ul li {
+    padding: 0 15px;
+  }
+  .pcpFnbblock .pcpfnbCategory ul li a {
+    /*font-size:18px;line-height:22px;*/
+    //// font-size: 16px;
+    //// line-height: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+  }
+  .pcpFnbblock .pcpfnbCategory .tse-scrollable.horizontal {
+    height: 34px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead figure {
+    min-height: 318px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead h2 {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 20px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead h2 span::after {
+    bottom: -10px;
+  }
+
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilcwColrgt {
+    width: 491px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols h3 {
+    /*font-size:20px;line-height:26px;*/
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 5px;
+  }
+  /*.pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols > p{font-size:16px;line-height:26px;letter-spacing:0.01em;padding:5px 0 10px;}*/
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols > p {
+    margin: 5px 0 10px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap {
+    padding: 10px 0 0;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap p {
+    /*font-size:20px;line-height:20px;padding:10px 0;*/
+    font-size: 19px;
+    line-height: 20px;
+    padding: 8px 0;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary {
+    /*min-width:100px;font-size:18px;line-height:24px;*/
+    min-width: 85px;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 6px 10px 4px;
+  }
+  /*.pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary span::after{/ *height:24px;* /width:14px;height:22px;background-size:14px auto;} Hided14072020*/
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary span {
+    padding-right: 21px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary span:before,
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary span:after {
+    width: 14px;
+    background-size: 14px 14px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnunavail {
+    min-width: 85px;
+    font-size: 16px;
+    line-height: 22px;
+    line-height: 24px;
+    padding: 6px 10px 4px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnunavail span {
+    padding-right: 21px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnunavail span:before,
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnunavail span:after {
+    width: 14px;
+    background-size: 14px 14px;
+  }
+
+  /* Column Right > Cart */
+  .pcpCart h3 {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 10px 0;
+  }
+  .pcpCart .pcpcAction .btnswrap .btn.btndefault {
+    line-height: 30px;
+  }
+  /* Column Right > Cart > Cart Initial/Empty Block */
+  .pcpCart .pcpCartempty .pcpceInner {
+    padding: 10px 0;
+  }
+  .pcpCart .pcpCartempty .pcpceInner h3 {
+    margin-bottom: 30px;
+  }
+  .pcpCart .pcpCartempty .pcpceInner p {
+    font-size: 16px;
+    line-height: 25px;
+    padding: 60px 0 0;
+    letter-spacing: 0.01em;
+  }
+  /* Column Right > Cart > Booking Summery */
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer {
+    padding: 10px 0 0px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows {
+    padding: 20px 0 0;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows ul li {
+    padding: 10px 0 0;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows.pcpbscrFNB ul li {
+    padding: 14px 0 0;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows.pcpbscrSubtotal ul li {
+    padding: 7px 0;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows h4 {
+    margin: 0 0 10px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows h5 {
+    font-size: 18px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows p {
+    font-size: 18px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsTotalstrap h5,
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsTotalstrap p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  /* F&B Modifier Popup */
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li .subItems h4 {
+    margin: 0 0 5px;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li .subItems ul {
+    padding-left: 10px;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li .subItems ul li {
+    padding: 10px 0 0;
+  }
+
+  /* Gift card changes */
+  .paymentMethod-cont .panel-default > .panel-heading + .panel-collapse > .panel-body.giftCard-body .btnswrap {
+    margin-bottom: 15px;
+  }
+  .paymentMethod-cont .panel-default > .panel-heading + .panel-collapse > .panel-body.giftCard-body .btnswrap .btn.btndefault {
+    line-height: 24px;
+  }
+  .pcbOrderreviewwrap .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows .pcpPrice .removeGC {
+    width: 17px;
+    height: 17px;
+    margin-top: -10px;
+  }
+
+  /*Header > Location*/
+
+  .pageHeader .pcpLocation .pcplDropdown .pcplddBody .pclList ul li a {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  /* Specials Strap */
+  .specialsStrap .ssH2 {
+    max-width: unset;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .specialsStrap .rcBox {
+    min-height: 64px;
+    padding: 10px;
+  }
+  .specialsStrap .rcBox.rcbColumn h2 {
+    line-height: 22px;
+  }
+  .specialsStrap .rcBox.rcbColumn p {
+    line-height: 22px;
+  }
+  .specialsStrap .columnRight .rcBox.rcbColumn {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .specialsStrap .ssCols {
+    // max-width: 705px;
+  }
+  .specialsStrap .ssCols .ssCol {
+    // padding: 0 5px;
+  }
+  /*Left Column > F&B Category Accordion*/
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .iconDeliveryMode {
+    height: 36px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li.fnbDeliveryInSeat .pcpfnbilCols .btnswrap .iconDeliveryMode {
+    width: 25px;
+    background-size: 25px auto;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li.fnbPickup .pcpfnbilCols .btnswrap .iconDeliveryMode {
+    width: 28px;
+    background-size: 28px auto;
+  }
+}
+
+@media (max-width: 1199px) {
+  /* Page Header Styles */
+  .pageHeader .phInner .siteLogo {
+    max-width: 170px;
+  }
+  body.phSticky .pageHeader .phInner .siteLogo {
+    max-width: 110px;
+  }
+
+  /* Page Content Styles */
+  .pageContent {
+    padding: 93px 0 0;
+  }
+  body.phSticky .pageContent {
+    padding: 85px 0 0;
+  }
+
+  /* Page Content > Panels(Page layout) */
+  .pcPanel {
+    padding: 15px 0;
+  }
+  .pcPanel .pcpHead .pcphInner h1 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  /*Confirm F&B Booking*/
+  .pcpfnbConfirmbooking {
+    max-width: 500px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner {
+    padding: 10px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner h1 {
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0 0 10px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner p span:before {
+    width: 2px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner p.pcpfnbcbiLocation span:before {
+    margin-right: 5px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner .btnswrap {
+    padding: 15px 0 0;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner .btnswrap .btn.btndefault,
+  .pcpfnbConfirmbooking .pcpfnbcbInner .btnswrap .btn.btnsecondary {
+    line-height: 20px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner .btnswrap .btn.btntext {
+    padding: 0 0 5px;
+    margin: 3px 0 0 20px;
+  }
+  .pcpfnbConfirmbooking {
+    .pcpfnbcbInner {
+      h1 {
+        margin: 0 0 20px;
+      }
+      h2 {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      h3 {
+        font-size: 16px;
+        line-height: 22px;
+        font-family: $fontSb;
+        padding: 20px 0 0;
+      }
+      .btnswrap {
+        padding: 10px 0 0;
+      }
+    }
+  }
+
+  /*Location Dropdown*/
+  .pcpLocation {
+    max-width: 450px;
+  }
+  .pcpLocation .pcplDropdown .pcplddHead a {
+    font-size: 16px;
+    padding: 7px 15px;
+    letter-spacing: 0.02em;
+  }
+
+  .pcpLocation .pcplDropdown .pcplddBody .roundBoxshadowed {
+    padding: 15px;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .btnswrap {
+    padding: 7px 0 15px;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .btnswrap .btn.btndefault {
+    min-width: 200px; /*line-height:20px; Hided26062020*/
+    line-height: 30px;
+    padding: 0 10px;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .btnswrap .btn.btndefault span {
+    padding-left: 32px;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .btnswrap .btn.btndefault span:before,
+  .pcpLocation .pcplDropdown .pcplddBody .btnswrap .btn.btndefault span:after {
+    background-size: 22px 23px;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .pclList {
+    padding: 10px 0 0;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .pclList h5 {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 5px 0;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .pclList ul li a {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 7px 0;
+  }
+
+  /* Page Content > Panels(Page layout) > 2 Column Layout */
+  .pcPanel .pcpBody .pcpbInner .pcpbiColswrap .pcpbiCols.pcpbiColleft .pcpbiclInner {
+    padding: 10px 0;
+  }
+  .pcPanel .pcpBody .pcpbInner .pcpbiColswrap .pcpbiCols.pcpbiColright .pcpbicrInner {
+    padding: 10px 0;
+  }
+
+  /* F&B List Block */
+  .pcpFnbblock #pcpfnbCategorywrapper.pcpfnbCategorysticky {
+    padding: 47px 0 0;
+  }
+  .pcpFnbblock #pcpfnbCategorywrapper.pcpfnbCategorysticky .pcpfnbCategory {
+    top: 85px;
+  }
+  .pcpFnbblock .pcpfnbCategory .tse-scrollable.horizontal {
+    height: 27px;
+  }
+  .pcpFnbblock .pcpfnbCategory ul li.animateLi {
+    height: 2px;
+  }
+  .pcpFnbblock .pcpfnbCategory ul li a {
+    font-size: 16px;
+    //// line-height: 22px;
+    line-height: 36px;
+    padding: 0 0 5px;
+  }
+  .pcpFnbblock .pcpfnbCategory ul li a:after {
+    height: 2px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead figure {
+    min-height: 261px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead h2 {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 10px 15px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead h2 span {
+    padding-right: 30px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead h2 span:before {
+    width: 20px;
+    height: 10px;
+    background-size: 20px auto;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead h2 span::after {
+    bottom: -7px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist {
+    padding-top: 8px;
+    padding-bottom: 15px;
+  }
+
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilcwCollft {
+    width: 98px;
+    padding: 0 10px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilcwColrgt {
+    width: 414px;
+    padding: 0 10px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols h3 {
+    /*font-size:18px;line-height:24px;*/
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols > p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap p {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 9px 0;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap p span.strikethrough {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0 10px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap p span.offerpercent {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary {
+    min-width: 10px;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 5px 10px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnunavail {
+    min-width: 10px;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 5px 10px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  /*.pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary span{padding-top:2px;padding-right:21px;}
+  /*.pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary span:after{width:16px;height:100%;background-size:16px auto;margin-left:0;position:absolute;top:0;right:0;} Hided14072020*/
+
+  /* Column Right > Cart */
+  .pcpCart h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .pcpCart .pcpcAction {
+    padding: 15px 0 0;
+  }
+  .pcpCart .pcpcAction .btnswrap .btn.btndefault {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+  }
+  /* Column Right > Cart > Cart Initial/Empty Block */
+  .pcpCart .pcpCartempty .pcpceInner h3 {
+    margin-bottom: 20px;
+  }
+  .pcpCart .pcpCartempty .pcpceInner p {
+    background-size: 41px auto;
+    padding: 50px 0 0;
+  }
+  /* Column Right > Cart > Booking Summery */
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer {
+    padding: 5px 0 0px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows {
+    padding: 15px 0 0;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows ul li {
+    padding: 7px 0 0;
+    padding: 10px 0 0;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows.pcpbscrFNB ul li {
+    padding: 10px 0 0;
+    padding: 15px 0 0;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows h4 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows h5 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows h5 span {
+    font-size: 13px;
+    line-height: 17px;
+    margin: 0;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsTotalstrap h5,
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsTotalstrap p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .pcpCart.promoffer .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows .pcpbscrulColrgt .offerpercent {
+    font-size: 14px;
+    line-height: 14px;
+    bottom: -20px;
+  }
+
+  /* F&B Modifier Popup */
+
+  .fnbmodifierModal .fnbItemdesc h2 {
+    padding-right: 75px;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows h3 {
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li .customCheckbox label,
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li .customRadio label {
+    padding-right: 32px;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li h4 {
+    padding-right: 83px;
+    letter-spacing: 0.02em;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li .additionalItems {
+    min-height: 22px;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li .subItems h4 i {
+    width: 16px;
+    height: 16px;
+    right: 3px;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows .form-group .form-control {
+    height: 90px;
+    font-size: 15px;
+    padding: 10px;
+  }
+  .fnbmodifierModal .fnbQuantity {
+    padding: 10px 20px;
+  }
+  .fnbmodifierModal .fnbQuantity h5 {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+  }
+  .fnbmodifierModal .fnbmmAction .btnswrap .btn.btndefault {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 15px;
+    letter-spacing: 0.01em;
+  }
+
+  /* Order Review */
+  .pcbOrderreview .pcborInner .pcborRows .pcborrHead h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows .pcborrBody h3 {
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+  }
+  /* Order Review > Add  Tips */
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrHead h2 {
+    line-height: 18px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrBody .ratInner ul li .roundBoxshadowed {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrBody .ratInner ul li > p {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 0 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrBody .ratInner .ratiOthers .form-group > label {
+    line-height: 40px;
+  }
+  /* Order Review > User(Your) Details */
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .customCheckbox label {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 30px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .customCheckbox label i {
+    top: 1px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .rudPasswprd .form-group .form-control {
+    padding-right: 130px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .rudPasswprd .form-group .btnswrap {
+    width: 115px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .rudPasswprd .form-group .btnswrap a.btn.btndefault {
+    line-height: 24px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .rudSuccess p a {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  /* Order Review > Rewards */
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .rrInner {
+    padding: 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .rrInner > p {
+    font-size: 18px;
+    line-height: 24px;
+    background-size: 45px auto;
+    padding: 64px 0 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .rrInner > p span {
+    padding: 7px 0 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .rrInner .btnswrap .btn.btndefault {
+    min-width: 140px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .rrInner .btnswrap p {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 7px 0;
+  }
+  /* Order Review > Alcohol Info and Terms & Conditions  */
+  .pcbOrderreview .pcborInner .pcborRows.rowBottom .pcborrBody .rbAlcoholinfo {
+    padding: 15px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowBottom .pcborrBody .rbAlcoholinfo h4 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowBottom .pcborrBody .rbAlcoholinfo h4 span {
+    padding-left: 15px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowBottom .pcborrBody .rbAlcoholinfo h4:before {
+    width: 60px;
+    height: 54px;
+    background-size: 60px 54px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowBottom .pcborrBody .customCheckbox label {
+    font-size: 15px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowBottom .pcborrBody .customCheckbox label i {
+    top: 1px;
+  }
+  /* Order Review > Right Column  */
+  .pcbOrderreviewwrap .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows .pcpPrice,
+  .pcbOrderreviewwrap .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows .pcpPrice {
+    padding-right: 0px;
+  }
+  .pcbOrderreviewwrap .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows .pcpPricep .itemDeleterow,
+  .pcbOrderreviewwrap .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows .pcpPrice .itemDeleterow {
+    width: 15px;
+    height: 15px;
+    background-size: 15px auto;
+    margin-top: -8px;
+  }
+  .pcbOrderreviewwrap .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsTotalstrap p,
+  .pcbOrderreviewwrap .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsTotalstrap p {
+    padding-right: 0px;
+  }
+
+  /* Gift card changes */
+  .paymentMethod-cont .panel-default > .panel-heading + .panel-collapse > .panel-body.giftCard-body .btnswrap .btn.btndefault {
+    line-height: 22px;
+  }
+  .paymentMethod-cont .panel-default > .panel-heading + .panel-collapse > .panel-body.giftCard-body .form-group > p.success-txt {
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 20px;
+  }
+  .pcbOrderreviewwrap .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows .pcpPrice .removeGC {
+    width: 15px;
+    height: 15px;
+    margin-top: -9px;
+  }
+
+  /*Header > Location*/
+  .pageHeader .phInner .phiRight .pcpLocation {
+    min-width: 200px;
+  }
+  .pageHeader .pcpLocation .pcplDropdown .pcplddBody .roundBoxshadowed {
+    padding: 15px;
+  }
+  .pageHeader .pcpLocation .pcplDropdown .pcplddBody .btnswrap {
+    padding: 0 0 15px;
+  }
+  .pageHeader .pcpLocation .pcplDropdown .pcplddBody .btnswrap .btn.btndefault {
+    padding: 5px 10px;
+  }
+  .pageHeader .pcpLocation .pcplDropdown .pcplddBody .pclList ul li {
+    margin: 0 -10px;
+  }
+  .pageHeader .pcpLocation .pcplDropdown .pcplddBody .pclList ul li a {
+    padding: 0 10px;
+  }
+  /* Specials Strap */
+  .specialsStrap {
+    padding: 0 0 20px;
+  }
+  .specialsStrap .ssH2 {
+    max-width: unset;
+    line-height: 22px;
+  }
+  .specialsStrap .rcBox h3 {
+    max-width: 110px;
+  }
+  .specialsStrap .rcBox .rcDiscount {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .specialsStrap .ssCols {
+    // max-width: 580px;
+    // padding: 0 10px;
+  }
+  .specialsStrap .ssCols .ssCol {
+    // padding: 0 10px;
+  }
+  .specialsStrap .ssCols.slick-slider.slick-initialized .slick-arrow.slick-prev {
+    left: 0;
+  }
+  .specialsStrap .ssCols.slick-slider.slick-initialized .slick-arrow.slick-next {
+    right: 0;
+  }
+  /*Member Login*/
+  .switchStrap {
+    padding: 0 0 27px;
+  }
+  .switchStrap .switchMemberLogin {
+    padding: 12px 0;
+  }
+  .switchStrap .switchMemberLogin .smlInner {
+    padding: 10px 0;
+  }
+  .switchStrap .switchMemberLogin .smlInner .form-switch {
+    height: 40px;
+  }
+  .switchStrap .switchMemberLogin .smlInner .form-switch .form-check-label {
+    width: 76px;
+    height: 40px;
+  }
+  .switchStrap .switchMemberLogin .smlInner .form-switch .form-check-label:before {
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    left: 5px;
+  }
+  .switchStrap .switchMemberLogin .smlInner .form-switch .form-check-input:checked + .form-check-label:before {
+    left: 41px;
+  }
+}
+
+/* F&B Modifier Popup> Banner image height alteration on client request */
+/*@media (min-width:768px) and (max-width:1199px) and (min-height:640px) {
+  .fnbmodifierModal .modal-header{height:320px;}
+  }
+  @media (min-width:768px) and (max-width:1199px) and (min-height:768px) {
+  .fnbmodifierModal .modal-header{height:360px;}
+  }
+  @media (min-width:768px) and (max-width:1199px) and (min-height:900px) {
+  .fnbmodifierModal .modal-header{height:420px;}
+  }
+  @media (min-width:768px) and (max-width:1199px) and (min-height:1024px) {
+  .fnbmodifierModal .modal-header{height:476px;}
+  }*/
+@media (min-width: 768px) and (max-width: 1199px) and (max-height: 639px) {
+  .fnbmodifierModal .modal-header {
+    height: 250px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) and (min-height: 640px) {
+}
+@media (min-width: 768px) and (max-width: 1199px) and (min-height: 768px) {
+}
+@media (min-width: 768px) and (max-width: 1199px) and (min-height: 900px) {
+  /*.fnbmodifierModal .modal-header{height:400px;}*/
+  /*.fnbmodifierModal .modal-header{height:500px;}*/
+}
+/*@media (min-width:768px) and (max-width:1199px) and (min-height:1024px) {
+  .fnbmodifierModal .modal-header{height:500px;}
+  }*/
+/* E.O.F&B Modifier Popup> Banner image height alteration on client request */
+
+@media (max-width: 991px) {
+  /* Page Content > Panels(Page layout) */
+  .pcPanel .pcpHead .pcphInner h1 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  /*Location Dropdown*/
+  .pcpLocation {
+    max-width: 400px;
+    padding: 0;
+  }
+
+  .pcpLocation .pcplDropdown .pcplddBody .pclList ul li a {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 5px 0;
+  }
+
+  /*Confirm F&B Booking*/
+  .pcpfnbConfirmbooking {
+    max-width: 75%;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner {
+    padding: 5px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner h1 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner p span:before {
+    width: 2px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner p.pcpfnbcbiLocation span:before {
+    width: 18px;
+    height: 22px;
+    background-size: 18px auto;
+    margin-right: 5px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner .btnswrap {
+    padding: 15px 0 0;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner .btnswrap .btn.btndefault,
+  .pcpfnbConfirmbooking .pcpfnbcbInner .btnswrap .btn.btnsecondary {
+    line-height: 20px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner .btnswrap .btn.btntext {
+    padding: 0 0 5px;
+    margin: 3px 0 0 20px;
+  }
+  .pcpfnbConfirmbooking {
+    .pcpfnbcbInner {
+      h1 {
+        font-family: $fontEb;
+      }
+      .btnswrap {
+        padding: 10px 0 0;
+      }
+    }
+  }
+
+  body.pcpbiColright-open {
+    overflow: hidden;
+  }
+  .pcPanel .pcpBody .pcpbInner {
+    padding: 0 0 76px;
+    padding: 0 0 62px;
+    padding: 0;
+  }
+  .pcPanel .pcpBody .pcpbInner .pcpbiColswrap {
+    margin: 0 -10px;
+  }
+  .pcPanel .pcpBody .pcpbInner .pcpbiColswrap .pcpbiCols {
+    float: none;
+    padding: 0 10px;
+  }
+  .pcPanel .pcpBody .pcpbInner .pcpbiColswrap .pcpbiCols.pcpbiColfull {
+    width: auto;
+  }
+  .pcPanel .pcpBody .pcpbInner .pcpbiColswrap .pcpbiCols.pcpbiColleft {
+    width: auto;
+  }
+  .pcPanel .pcpBody .pcpbInner .pcpbiColswrap .pcpbiCols.pcpbiColright {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 11;
+    display: none;
+  }
+  .pcPanel .pcpBody .pcpbInner .pcpbiColswrap .pcpbiCols.pcpbiColright .pcpbicrInner {
+    width: 100%;
+    max-height: 100%;
+    background: #fff;
+    padding: 0 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.12);
+  }
+  .pcPanel .pcpBody .pcpbInner .pcpbiColswrap .pcpbiCols.pcpbiColright .pcpbicrInner .roundBoxshadowed {
+    padding: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+  }
+  /* .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox{margin:0 auto;} */
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead figure {
+    min-height: 350px;
+  }
+
+  /*.pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li:first-child{margin:0;}*/
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilcwCollft {
+    float: none;
+    padding: 0;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li:first-child .pcpfnbilcwCollft {
+    top: 20px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilcwColrgt {
+    float: none;
+    width: auto;
+    min-height: 98px;
+    padding: 0 0 0 113px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  /*.pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols > p{font-size:15px;line-height:21px;padding:5px 0 7px;letter-spacing:0.02em;}*/
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols > p {
+    font-size: 15px;
+    line-height: 21px;
+    margin: 5px 0 7px;
+    letter-spacing: 0.02em;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap {
+    padding: 7px 0 0;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap p {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 9px 0;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary {
+    line-height: 20px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary span {
+    /*padding-right:17px; Hided14072020*/
+    padding-right: 19px;
+  }
+  /*.pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary span:after{width:12px;background-size:12px auto;} Hided14072020*/
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary span:before,
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary span:after {
+    width: 12px;
+    background-size: 12px 12px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnunavail {
+    line-height: 22px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnunavail span {
+    padding-right: 19px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnunavail span:before,
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnunavail span:after {
+    width: 12px;
+    background-size: 12px 12px;
+  }
+
+  /* Column Right > Cart */
+  .pcpCart .pcpcAction {
+    width: 100%;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  .pcpCart .pcpcAction .btnswrap .btn.btndefault {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 10px 20px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+  /* Column Right > Cart > Cart Initial/Empty Block */
+  .pcpCart .pcpCartempty .pcpceInner {
+    padding: 0 0 20px;
+  }
+  /* Column Right > Cart > Booking Summery */
+  .pcpCart .pcpBookingsummary .pcpbsInner {
+    padding: 0 0 42px;
+  }
+
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows ul li {
+    margin: 0 -5px;
+    margin: 0;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows .pcpbscrulCollft {
+    padding: 0 5px;
+    padding-left: 0;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows .pcpbscrulColrgt {
+    padding: 0 5px;
+    padding-right: 0;
+  }
+  .pcpCart.promoffer .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows .pcpbscrulColrgt .offerpercent {
+    right: 5px;
+  }
+  /* Bottom Continue strap(Tab & Mobile) > Columns Right toggle trigger */
+  .pcpbBottomstrap {
+    display: block;
+  }
+  .pcpbBottomstrap .pcpbbsInner .pcpbsTrigger h2 {
+    position: relative;
+    padding-left: 48px;
+  }
+  .pcpbBottomstrap .pcpbbsInner .pcpbsTrigger h2:before {
+    content: "";
+    background: url("../assets/images/ic-cart_white51x47.png") no-repeat 0 0;
+    background-size: 38px 35px;
+    width: 38px;
+    height: 35px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  /* F&B Modifier Popup */
+  .fnbmodifierModal .modal-header .modalClose {
+    width: 26px;
+    height: 26px;
+    background-size: 12px auto;
+  }
+  .fnbmodifierModal .fnbItemdesc h2 {
+    font-size: 18px;
+    line-height: 24px;
+    padding-right: 65px;
+  }
+  .fnbmodifierModal.promoffer .fnbItemdesc h2 span .offerpercent {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .fnbmodifierModal.promoffer .fnbItemdesc h2 span .offerpercent .strikethrough {
+    margin: 0 10px;
+  }
+  .fnbmodifierModal .fnbItemdesc p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+  }
+  .fnbmodifierModal .fnbQuantity h5 {
+    padding: 2px 0;
+  }
+  .fnbmodifierModal .fnbmmAction .btnswrap .btn.btndefault {
+    line-height: 22px;
+    padding: 10px;
+  }
+
+  /* Specials Strap */
+  .specialsStrap .rcBox {
+    min-height: 62px;
+  }
+  .specialsStrap .rcBox h3 {
+    max-width: 120px;
+  }
+  .specialsStrap .ssCols {
+    // max-width: 340px;
+  }
+  .specialsStrap .rcBox.rcbColumn h2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .specialsStrap .rcBox.rcbColumn p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .specialsStrap .rcBox.rcbColumn p span {
+    font-size: 14px;
+  }
+  /*Member Login*/
+  .switchStrap .switchMemberLogin .smlInner .smliCols p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .switchStrap .switchMemberLogin .smlInner .smliCols p.afterLogin span.userInfo {
+    font-size: 18px;
+  }
+  .switchStrap .switchMemberLogin .smlInner .form-switch {
+    height: 36px;
+  }
+  .switchStrap .switchMemberLogin .smlInner .form-switch .form-check-label {
+    width: 70px;
+    height: 36px;
+  }
+  .switchStrap .switchMemberLogin .smlInner .form-switch .form-check-label:before {
+    width: 28px;
+    height: 28px;
+    top: 4px;
+    left: 4px;
+  }
+  .switchStrap .switchMemberLogin .smlInner .form-switch .form-check-input:checked + .form-check-label:before {
+    left: 38px;
+  }
+  /*Left Column > F&B Category Accordion*/
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .iconDeliveryMode {
+    height: 34px;
+  }
+
+  .tabSelectDetails {
+    max-width: none;
+  }
+  .tabSelectDetails .MuiPaper-elevation4 {
+    box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 0px 0px rgb(0 0 0 / 12%);
+  }
+  .tabSelectDetails .tsdSelection p {
+    max-width: none;
+  }
+  .tabSelectDetails .tsdSelection .btnswrap.btnswrapStickyBottom {
+    width: 100%;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: white;
+  }
+  .tabSelectDetails .tsdSelection .btnswrap.btnswrapStickyBottom .btn {
+    font-size: 18px;
+    line-height: 44px;
+    display: block;
+    @include cssBorderRadius(0);
+    letter-spacing: 0.015em;
+  }
+}
+
+/* F&B Modifier Popup> Banner image height alteration on client request */
+@media (min-width: 768px) and (max-width: 991px) and (max-height: 479px) {
+  .fnbmodifierModal .modal-header {
+    height: 250px;
+  }
+}
+/* E.O.F&B Modifier Popup> Banner image height alteration on client request */
+
+@media (max-width: 767px) {
+  /* Bootstrap Reset*/
+  .modal-dialog {
+    max-width: none;
+  }
+  /* Page Header Styles */
+  .pageHeader .phInner {
+    padding: 15px 0;
+  }
+  body.phSticky .pageHeader .phInner {
+    padding: 6px 0;
+  }
+
+  /* Page Content Styles */
+  .pageContent {
+    padding: 85px 0 0;
+  }
+  body.phSticky .pageContent {
+    padding: 77px 0 0;
+  }
+  body.noStickyHeader .pageContent {
+    padding: 0; //***Option to remove fixed header.
+  }
+
+  /* Page Content > Panels(Page layout) */
+  .pcPanel .pcpHead {
+    padding: 0;
+  }
+  .pcPanel .pcpHead .pcphInner h1 {
+    font-size: 18px;
+    line-height: 24px; /*text-align:left; Hided01072020*/
+  }
+  .pcPanel .pcpBody {
+    padding: 0px 0;
+  }
+  .pcPanel .pcpBody .pcpbInner {
+    padding: 0 0 56px;
+    padding: 0;
+  }
+  .pcPanel .pcpBody .pcpbInner .pcpbiColswrap {
+    margin: 0 -15px;
+  }
+  .pcPanel .pcpBody .pcpbInner .pcpbiColswrap .pcpbiCols {
+    padding: 0 15px;
+  }
+  .pcPanel .pcpBody .pcpbInner .pcpbiColswrap .pcpbiCols.pcpbiColright .pcpbicrInner {
+    padding: 0 15px;
+  }
+
+  .pcpcClose {
+    padding: 15px 0;
+  }
+  /*.pcpCart .pcpcAction .btnswrap .btn.btndefault{font-size:20px;line-height:26px;}
+  .pcpCart .pcpBookingsummary .pcpbsInner{padding:0 0 50px;} Hided16022021*/
+  .pcpCart .pcpcAction .btnswrap .btn.btndefault {
+    font-size: 17px;
+    line-height: 22px;
+    padding: 15px 10px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner {
+    padding: 0 0 56px;
+  }
+  /*** iPhoneX Issue ***/
+  /* Browsers which partially support CSS Environment variables (iOS 11.0-11.2). */
+  /*@supports (padding-bottom: constant(safe-area-inset-bottom)) {
+      .pcpCart .pcpBookingsummary .pcpbsInner {
+          --safe-area-inset-bottom: constant(safe-area-inset-bottom);
+          padding-bottom: calc(50px + var(--safe-area-inset-bottom));
+      }
+      body.latest-ios-devices .pcpCart .pcpBookingsummary .pcpbsInner {
+          --safe-area-inset-bottom: constant(safe-area-inset-bottom);
+          padding-bottom: calc(50px + var(--safe-area-inset-bottom) + 50px);
+      }
+      .pcpCart .pcpcAction .btnswrap {
+          background:$dba-bg;
+  
+          --safe-area-inset-bottom: constant(safe-area-inset-bottom);
+          padding-bottom: var(--safe-area-inset-bottom);
+      }
+      body.latest-ios-devices .pcpCart .pcpcAction .btnswrap {
+          background:$dba-bg;
+  
+          --safe-area-inset-bottom: constant(safe-area-inset-bottom);
+          padding-bottom: calc(var(--safe-area-inset-bottom) + 50px);
+      }
+  }*/ /*For IOS safe-area-insert issue - Hided22012021*/
+  /* Browsers which fully support CSS Environment variables (iOS 11.2+). */
+  /*@supports (padding-bottom: env(safe-area-inset-bottom)) {
+      .pcpCart .pcpBookingsummary .pcpbsInner {
+          --safe-area-inset-bottom: env(safe-area-inset-bottom);
+          padding-bottom: calc(50px + var(--safe-area-inset-bottom));
+      }
+      body.latest-ios-devices .pcpCart .pcpBookingsummary .pcpbsInner {
+          --safe-area-inset-bottom: env(safe-area-inset-bottom);
+          padding-bottom: calc(50px + var(--safe-area-inset-bottom) + 50px);
+      }
+      .pcpCart .pcpcAction .btnswrap {
+          background:$dba-bg;
+  
+          --safe-area-inset-bottom: env(safe-area-inset-bottom);
+          padding-bottom: var(--safe-area-inset-bottom);
+      }
+      body.latest-ios-devices .pcpCart .pcpcAction .btnswrap {
+          background:$dba-bg;
+  
+          --safe-area-inset-bottom: env(safe-area-inset-bottom);
+          padding-bottom: calc(var(--safe-area-inset-bottom) + 50px);
+      }
+  }*/ /*For IOS safe-area-insert issue - Hided22012021*/
+  /*** E.O.iPhoneX Issue ***/
+
+  /*Location Dropdown*/
+  body.pcplDropdown-open {
+    overflow: hidden;
+  }
+  .pcpLocation {
+    max-width: none;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .pcpLocation .pcplDropdown .pcplddHead a {
+    font-size: 15px;
+    padding: 7px 0;
+  }
+
+  .pcpLocation .pcplDropdown .pcplddBody {
+    height: 100%;
+    max-height: 100%;
+    padding: 0 15px;
+    background: #fff;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    z-index: 100;
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .roundBoxshadowed {
+    padding: 0 20px 20px;
+    padding: 0 0 15px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  /*Confirm F&B Booking*/
+  .pcpfnbConfirmbooking {
+    max-width: 85%;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner {
+    padding: 0;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner h1 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner p.pcpfnbcbiLocation span:before {
+    width: 16px;
+    height: 20px;
+    background-size: 16px auto;
+  }
+  .pcpfnbConfirmbooking {
+    .pcpfnbcbInner {
+      h1 {
+        font-size: 18px;
+        line-height: 24px;
+        //margin: 0 0 15px;
+      }
+      h2 {
+        font-size: 16px;
+        line-height: 22px;
+        font-family: $fontEb;
+      }
+      // h3 {
+      //   padding: 15px 0 0;
+      // }
+      p {
+        font-size: 15px;
+        line-height: 21px;
+      }
+      .btnswrap {
+        padding: 7px 0 0;
+      }
+    }
+  }
+
+  /* F&B List Block */
+  .pcpFnbblock #pcpfnbCategorywrapper.pcpfnbCategorysticky .pcpfnbCategory {
+    top: 77px;
+  }
+  .pcpFnbblock #pcpfnbCategorywrapper.pcpfnbCategorysticky .pcpfnbCategory .pcpfnbcInner {
+    width: auto;
+    padding: 0 15px;
+  }
+  .pcpFnbblock .pcpfnbCategory ul li {
+    padding: 0 10px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li {
+    padding: 20px 0 0;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead h2 {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+  }
+  /*.pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li{margin:15px 0 0;}*/
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilcwCollft {
+    width: 74px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilcwColrgt {
+    padding-left: 89px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols h3 {
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap p {
+    padding: 8px 0;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary {
+    line-height: 18px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnunavail {
+    line-height: 18px;
+  }
+
+  .pcpCart .pcpCartempty .pcpceInner {
+    padding: 0 0 15px;
+  }
+  /*** iPhoneX Issue ***/
+  /* Browsers which partially support CSS Environment variables (iOS 11.0-11.2). */
+  /*@supports (padding-bottom: constant(safe-area-inset-bottom)) {
+    .pcpCart .pcpCartempty .pcpceInner {
+      --safe-area-inset-bottom: constant(safe-area-inset-bottom);
+      padding-bottom: calc(15px + var(--safe-area-inset-bottom));
+    }
+  }*/ /*For IOS safe-area-insert issue - Hided22012021*/
+  /* Browsers which fully support CSS Environment variables (iOS 11.2+). */
+  /*@supports (padding-bottom: env(safe-area-inset-bottom)) {
+    .pcpCart .pcpCartempty .pcpceInner {
+      --safe-area-inset-bottom: env(safe-area-inset-bottom);
+      padding-bottom: calc(15px + var(--safe-area-inset-bottom));
+    }
+  }*/ /*For IOS safe-area-insert issue - Hided22012021*/
+  /*** E.O.iPhoneX Issue ***/
+  /* Column Right > Cart > Booking Summery */
+  /* Bottom Continue strap(Tab & Mobile) > Columns Right toggle trigger */
+  .pcpbBottomstrap {
+    padding: 5px 15px;
+  }
+  /*** iPhoneX Issue ***/
+  /* Browsers which partially support CSS Environment variables (iOS 11.0-11.2). */
+  /*@supports (padding-bottom: constant(safe-area-inset-bottom)) {
+    .pcpbBottomstrap {
+      --safe-area-inset-bottom: constant(safe-area-inset-bottom);
+      padding-bottom: calc(5px + var(--safe-area-inset-bottom));
+    }
+    body.latest-ios-devices .pcpbBottomstrap {
+      --safe-area-inset-bottom: constant(safe-area-inset-bottom);
+      padding-bottom: calc(5px + var(--safe-area-inset-bottom) + 50px);
+    }
+  }*/ /*For IOS safe-area-insert issue - Hided22012021*/
+  /* Browsers which fully support CSS Environment variables (iOS 11.2+). */
+  /*@supports (padding-bottom: env(safe-area-inset-bottom)) {
+    .pcpbBottomstrap{
+      --safe-area-inset-bottom: env(safe-area-inset-bottom);
+      padding-bottom: calc(5px + var(--safe-area-inset-bottom));
+    }
+    body.latest-ios-devices .pcpbBottomstrap{
+      --safe-area-inset-bottom: env(safe-area-inset-bottom);
+      padding-bottom: calc(5px + var(--safe-area-inset-bottom) + 50px);
+    }
+  }*/ /*For IOS safe-area-insert issue - Hided22012021*/
+  /*** E.O.iPhoneX Issue ***/
+  .pcpbBottomstrap .pcpbbsInner {
+    padding: 7px 0;
+  }
+  .pcpbBottomstrap .pcpbbsInner .pcpbsTrigger h2 {
+    /*font-size:18px;*/
+    line-height: 20px;
+    letter-spacing: 0.0466667em;
+  }
+  .pcpbBottomstrap .pcpbbsInner .pcpbsTrigger h2 span {
+    line-height: 12px;
+    padding: 0 0 2px;
+  }
+  .pcpbBottomstrap .pcpbbsInner .btnswrap .btn.btntext {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.015em;
+  }
+  .pcpbBottomstrap .pcpbbsInner .pcpbsTrigger h2 {
+    padding-left: 38px;
+  }
+  .pcpbBottomstrap .pcpbbsInner .pcpbsTrigger h2:before {
+    width: 30px;
+    height: 28px;
+    background-size: 30px 28px;
+    top: 1px;
+  }
+
+  /* F&B Modifier Popup */
+  .fnbmodifierModal .modal-dialog {
+    height: 100%;
+    margin: 0;
+  }
+  .fnbmodifierModal .modal-content {
+    height: 100%;
+    background: #fff;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    display: block;
+  }
+  .fnbmodifierModal .modal-header,
+  .fnbmodifierModal .modal-header:before {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+  /*.fnbmodifierModal .modal-body{height:100%;/*overflow-x:hidden;overflow-y:auto; Hided03072020* /} Hided08W072020*/
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li {
+    padding: 7px 0;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows .form-group .form-control {
+    font-size: 14px;
+  }
+  .fnbmodifierModal .fnbmmAction .btnswrap .btn.btndefault {
+    font-size: 17px;
+    padding: 15px 10px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+  }
+  /*Overlay Scrollbar > Theme Dark*/
+  .fnbmodifierModal .osbWrap.os-theme-dark > .os-scrollbar-vertical {
+    padding-top: 0;
+  }
+  /*** iPhoneX Issue ***/
+  /* Browsers which partially support CSS Environment variables (iOS 11.0-11.2). */
+  /*@supports (padding-bottom: constant(safe-area-inset-bottom)) {
+    .fnbmodifierModal .modal-footer{
+      background:$dba-bg;
+  
+      --safe-area-inset-bottom: constant(safe-area-inset-bottom);
+      padding-bottom: calc(0px + var(--safe-area-inset-bottom));
+    }
+  }*/ /*For IOS safe-area-insert issue - Hided22012021*/
+  /* Browsers which fully support CSS Environment variables (iOS 11.2+). */
+  /*@supports (padding-bottom: env(safe-area-inset-bottom)) {
+    .fnbmodifierModal .modal-footer{
+      background:$dba-bg;
+  
+      --safe-area-inset-bottom: env(safe-area-inset-bottom);
+      padding-bottom: calc(0px + var(--safe-area-inset-bottom));
+    }
+  }*/ /*For IOS safe-area-insert issue - Hided22012021*/
+  /*** E.O.iPhoneX Issue ***/
+
+  /* Order Review */
+  .pcbOrderreview .pcborInner {
+    margin: 0 -15px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows {
+    padding: 15px 15px 0;
+    // border-top: 5px solid #f2f2f2;
+    // border-bottom: 5px solid #f2f2f2;
+  }
+  .pcbOrderreview .pcborInner .pcborRows:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows .pcborrHead h2 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows .pcborrHead h2 span {
+    font-size: 15px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows .pcborrBody h3 {
+    letter-spacing: 0.01em;
+  }
+  .pcbOrderreview .pcborInner .pcborRows .pcborrBody {
+    max-width: none;
+  }
+  /* Order Review > Add  Tips */
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrBody .ratInner ul {
+    padding: 0;
+    margin: 0 -7px 15px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrBody .ratInner ul li {
+    padding: 0 7px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrBody .ratInner ul li .roundBoxshadowed {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 5px 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrBody .ratInner ul li > p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrBody .ratInner .ratiOthers .form-group {
+    padding: 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrBody .ratInner .ratiOthers .form-group > label {
+    line-height: 36px;
+    top: 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrBody .ratInner .ratiOthers .form-control {
+    padding-left: 15px;
+  }
+  /* Order Review > User(Your) Details */
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails {
+    border-bottom: 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails.rewardMemberloggedin .pcborrHead h2 {
+    padding-right: 30px;
+    position: relative;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails.rewardMemberloggedin .pcborrHead h2 .rudEdit {
+    margin-left: 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -9px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .rudPasswprd .form-group .form-control {
+    padding-right: 110px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .rudPasswprd .form-group .btnswrap {
+    width: 100px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .rudPasswprd .form-group .btnswrap a.btn.btndefault {
+    line-height: 22px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .rudSuccess p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .rudSuccess p a {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  /* Order Review > Rewards */
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards {
+    border-top: 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody {
+    margin-bottom: 15px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .roundBoxshadowed {
+    -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.12);
+    -o-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.12);
+    -ms-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.12);
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .rrInner > p {
+    font-size: 16px;
+    line-height: 22px;
+    background-size: 34px auto;
+    padding: 47px 0 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .rrInner > p span {
+    padding: 5px 0 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .rrInner .btnswrap .btn.btndefault {
+    min-width: 100px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowRewards .pcborrBody .rrInner .btnswrap p {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 7px 0;
+  }
+  /* Order Review > Alcohol Info and Terms & Conditions  */
+  .pcbOrderreview .pcborInner .pcborRows.rowBottom {
+    padding-top: 0;
+    border-top: 0;
+    border-bottom: 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowBottom .pcborrBody {
+    padding: 0;
+    margin: 0 -15px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowBottom .pcborrBody .rbAlcoholinfo {
+    padding: 15px 10px;
+    margin: 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowBottom .pcborrBody .rbAlcoholinfo h4 {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowBottom .pcborrBody .rbAlcoholinfo h4 span {
+    vertical-align: middle;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowBottom .pcborrBody .rbAlcoholinfo h4:before {
+    width: 40px;
+    height: 36px;
+    background-size: 40px 36px;
+    background-position: left center;
+    vertical-align: middle;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowBottom .pcborrBody .customCheckbox {
+    padding: 15px;
+    padding: 15px 15px 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowBottom .pcborrBody .customCheckbox label {
+    font-size: 14px;
+  }
+
+  /* Gift card changes */
+  .paymentMethod-cont .panel-default > .panel-heading + .panel-collapse > .panel-body.giftCard-body .form-group > p.success-txt {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .pcpLocation .pcplDropdown .pcplddBody .pclList h5 {
+    font-size: 18px;
+  }
+  .pcpLocation .pcplDropdown .pcplddBody .pclList ul li a {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 15px 0;
+  }
+
+  /* Specials Strap */
+  .specialsStrap {
+    padding: 0 0 15px;
+  }
+  .specialsStrap .ssH2 {
+  }
+  .specialsStrap .ssCols {
+    // max-width: 290px;
+  }
+  .specialsStrap .columnLeft {
+    justify-content: flex-start;
+  }
+  /*Member Login*/
+  .switchStrap {
+    padding: 0 0 20px;
+  }
+  .switchStrap .switchMemberLogin {
+    padding: 10px 0;
+  }
+  .switchStrap .switchMemberLogin .smlInner {
+    padding: 5px 0;
+  }
+  .switchStrap .switchMemberLogin .smlInner .form-switch .form-check-label {
+    width: 66px;
+  }
+  .switchStrap .switchMemberLogin .smlInner .form-switch .form-check-input:checked + .form-check-label:before {
+    left: 34px;
+  }
+  /*Left Column > F&B Category Accordion*/
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .iconDeliveryMode {
+    height: 32px;
+  }
+  /* Select Date, Movie & Time*/
+  .tabSelectDetails .roundBoxshadowed {
+    @include cssBorderRadius(0);
+  }
+  .tabSelectDetails .tsdTabs {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .react-swipeable-view-container {
+    height: auto;
+  }
+  .tabSelectDetails .tsdSelection p {
+    max-width: none;
+  }
+  .tabSelectDetails .tsdSelection p span {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .tabSelectDetails .tsdSelection .btnswrap {
+    display: none;
+  }
+  .tabSelectDetails .tsdSelection .btnswrap.btnswrapMobile {
+    width: 100%;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .tabSelectDetails .tsdSelection .btnswrap.btnswrapMobile .btn {
+    font-size: 18px;
+    line-height: 44px;
+    display: block;
+    @include cssBorderRadius(0);
+    letter-spacing: 0.015em;
+  }
+  .tabSelectDetails .roundBoxshadowed .MuiTypography-root.tabContentShowtime .tab-data:before {
+    width: 25%;
+  }
+}
+
+@media (max-width: 729px) {
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead figure {
+    min-height: 305px;
+  }
+}
+
+@media (max-width: 767px) and (min-height: 480px) {
+  /* F&B Modifier Popup */
+  /*.fnbmodifierModal .modal-body{height:100% !important;max-height:100% !important;} Hided01102020*/
+  .fnbmodifierModal .modal-content {
+    /*padding:165px 0 96px; Hided 01102020*/
+    padding: 0 0 96px;
+  }
+  .fnbmodifierModal .modal-header {
+    width: 100%; /*position:absolute;position:fixed;top:0;left:0; Hided01102020*/
+  }
+  .fnbmodifierModal .modal-footer {
+    width: 100%;
+    height: 96px;
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  /*Overlay Scrollbar > Theme Dark*/
+  .fnbmodifierModal .osbWrap {
+    height: 100% !important;
+    max-height: 100% !important;
+  }
+  /*** iPhoneX Issue ***/
+  /* Browsers which partially support CSS Environment variables (iOS 11.0-11.2). */
+  /*@supports (padding-bottom: constant(safe-area-inset-bottom)) {
+    .fnbmodifierModal .modal-content{
+      --safe-area-inset-bottom: constant(safe-area-inset-bottom);
+      padding-bottom: calc(96px + var(--safe-area-inset-bottom));
+    }
+      body.latest-ios-devices .fnbmodifierModal .modal-content{
+      --safe-area-inset-bottom: constant(safe-area-inset-bottom);
+      padding-bottom: calc(96px + var(--safe-area-inset-bottom) + 50px);
+    }
+  }*/ /*For IOS safe-area-insert issue - Hided22012021*/
+  /*@supports (height: constant(safe-area-inset-bottom)) {
+    .fnbmodifierModal .modal-footer{
+      --safe-area-inset-bottom: constant(safe-area-inset-bottom);
+      height: calc(96px + var(--safe-area-inset-bottom));
+    }
+      body.latest-ios-devices .fnbmodifierModal .modal-footer{
+      --safe-area-inset-bottom: constant(safe-area-inset-bottom);
+      height: calc(96px + var(--safe-area-inset-bottom) + 50px);
+    }
+  }*/ /*For IOS safe-area-insert issue - Hided22012021*/
+  /* Browsers which fully support CSS Environment variables (iOS 11.2+). */
+  /*@supports (padding-bottom: env(safe-area-inset-bottom)) {
+    .fnbmodifierModal .modal-content{
+      --safe-area-inset-bottom: env(safe-area-inset-bottom);
+      padding-bottom: calc(96px + var(--safe-area-inset-bottom));
+    }
+      body.latest-ios-devices .fnbmodifierModal .modal-content{
+      --safe-area-inset-bottom: env(safe-area-inset-bottom);
+      padding-bottom: calc(96px + var(--safe-area-inset-bottom) + 50px);
+    }
+  }*/ /*For IOS safe-area-insert issue - Hided22012021*/
+  /*@supports (height: env(safe-area-inset-bottom)) {
+    .fnbmodifierModal .modal-footer{
+      --safe-area-inset-bottom: env(safe-area-inset-bottom);
+      height: calc(96px + var(--safe-area-inset-bottom));
+    }
+      body.latest-ios-devices .fnbmodifierModal .modal-footer{
+      --safe-area-inset-bottom: env(safe-area-inset-bottom);
+      height: calc(96px + var(--safe-area-inset-bottom) + 50px);
+    }
+  }*/ /*For IOS safe-area-insert issue - Hided22012021*/
+  /*** E.O.iPhoneX Issue ***/
+}
+@media (max-width: 767px) and (max-height: 479px) {
+  .fnbmodifierModal .modal-body .mCSB_scrollTools {
+    opacity: 0;
+  }
+}
+
+/* F&B Modifier Popup > Banner image height alteration on client request */
+@media (max-width: 767px) and (min-height: 568px) {
+  .fnbmodifierModal .modal-header {
+    height: auto !important;
+    background: none !important;
+  }
+}
+@media (min-width: 600px) and (max-width: 767px) and (min-height: 768px) {
+  .fnbmodifierModal .modal-header {
+    height: 300px !important;
+  }
+  .fnbmodifierModal .modal-header img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
+@media (min-width: 568px) and (max-width: 767px) and (max-height: 567px) {
+  .fnbmodifierModal .modal-header {
+    height: 240px !important;
+  }
+  .fnbmodifierModal .modal-header img {
+    display: none !important;
+  }
+}
+@media (max-width: 567px) and (max-height: 567px) {
+  .fnbmodifierModal .modal-header {
+    /*height:284px !important;*/
+    height: 250px !important;
+  }
+  .fnbmodifierModal .modal-header img {
+    display: none !important;
+  }
+}
+@media (max-width: 567px) and (max-height: 479px) {
+  .fnbmodifierModal .modal-header {
+    height: 240px !important;
+  }
+  .fnbmodifierModal .modal-header img {
+    display: none !important;
+  }
+}
+/* E.O.F&B Modifier Popup > Banner image height alteration on client request */
+
+@media (max-width: 639px) {
+  .pcpFnbblock .pcpfnbCategory ul li a {
+    //// font-size: 14px;
+    //// line-height: 20px;
+    letter-spacing: 0.03em;
+  }
+
+  /* F&B List Block */
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead figure {
+    min-height: 269px;
+  }
+
+  /* Column Right > Cart */
+  .pcpCart h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .pcpCart .pcpCartempty .pcpceInner p {
+    font-size: 14px;
+    line-height: 23px;
+    background-size: 36px auto;
+    padding: 43px 0 5px;
+    letter-spacing: 0.02em;
+  }
+
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows h4 {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows.pcpbscrFNB h4.childSpanWrap {
+    line-height: 23px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows h5 {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows h5 span {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsTotalstrap h5,
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsTotalstrap p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  /* Specials Strap */
+  .specialsStrap {
+    padding: 0 0 15px;
+  }
+  .specialsStrap .ssH2 {
+    max-width: unset;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .specialsStrap .rcBox h3 {
+    max-width: 90px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .specialsStrap .rcBox .priceInfo {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .specialsStrap .rcBox .priceInfo span.specialPrice {
+    font-size: 18px;
+  }
+  .specialsStrap .columnRight .rcBox.rcbColumn {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  //.specialsStrap .rcBox.rcbColumn h2{font-size:15px;line-height:19px;}
+  .specialsStrap .rcBox.rcbColumn p {
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .specialsStrap .ssCols {
+    // max-width: 252px;
+    padding: 0 5px;
+  }
+  .specialsStrap .ssCols .ssCol {
+    // padding: 0 5px;
+  }
+  .specialsStrap .ssCols.slick-slider.slick-initialized .slick-arrow.slick-prev {
+    left: -5px;
+  }
+  .specialsStrap .ssCols.slick-slider.slick-initialized .slick-arrow.slick-next {
+    right: -5px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* Specials Strap */
+  .specialsStrap .ssH2 {
+    margin: 0px;
+  }
+  .specialsStrap .ssH2 span {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .specialsStrap .rcBox h3 {
+    max-width: 120px;
+  }
+  .specialsStrap .ssCols {
+    max-width: 100%;
+    padding: 0 0px;
+  }
+  .specialsStrap .ssCols .ssCol {
+    // padding: 0 10px;
+  }
+  .specialsStrap .ssCols.slick-slider.slick-initialized .slick-arrow.slick-prev {
+    left: 0;
+  }
+  .specialsStrap .ssCols.slick-slider.slick-initialized .slick-arrow.slick-next {
+    right: 0;
+  }
+  .specialsStrap .columnLeft {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+  .specialsStrap > .container > .row {
+    align-items: flex-end;
+  }
+  /*Member Login*/
+  .switchStrap .switchMemberLogin .smlInner .form-switch {
+    height: 32px;
+  }
+  .switchStrap .switchMemberLogin .smlInner .form-switch .form-check-label {
+    width: 60px;
+    height: 32px;
+  }
+  .switchStrap .switchMemberLogin .smlInner .form-switch .form-check-label:before {
+    width: 24px;
+    height: 24px;
+  }
+  .switchStrap .switchMemberLogin .smlInner .form-switch .form-check-input:checked + .form-check-label:before {
+    left: 32px;
+  }
+  .switchStrap .switchMemberLogin .smlInner .smliCols p.afterLogin span.userInfo {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  /* Select Date, Movie & Time*/
+  .MuiAppBar-root.MuiAppBar-colorDefault .MuiTabs-scroller .MuiTabs-flexContainer .MuiTab-textColorPrimary {
+    font-size: 15px;
+  }
+  // .tabSelectDetails .roundBoxshadowed .tab-data .stExperience { padding-right: calc(var(--bs-gutter-x) * 0.5); }
+  .tabSelectDetails .roundBoxshadowed .tab-data .stExperience .d-grid {
+    display: flex !important;
+    padding: 0 10px 20px;
+  }
+  .tab-data {
+    padding: 7px 0;
+  }
+  .tabSelectDetails .roundBoxshadowed .MuiTypography-root.tabContentShowtime .tab-data:before {
+    width: 100%;
+    //height: 71px;
+    @include cssBorderRadius(0);
+    height: 54px;
+  }
+  .react-swipeable-view-container .experienceButton {
+    // min-width: 90px;
+    // height: 51px;
+    // min-height: 51px;
+    // display: inline-block;
+    // vertical-align: top;
+    margin: 0 0 0 0px;
+    padding-top: 7px;
+    padding-bottom: 11px;
+    &:first-child {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 567px) {
+  .pageForm .form-group .showdateGroup {
+    max-width: 100%;
+  }
+  .pageForm .form-group.seatNogroup .pageForm {
+    max-width: 95%;
+  }
+  .pcbOrderreview .pcborInner .row .showDate-formgroup.col-xs-5 {
+    width: 100%;
+  }
+  /*Confirm F&B Booking*/
+  .pcpfnbConfirmbooking {
+    max-width: none;
+    margin: 0;
+  }
+
+  /* Header */
+  .pageHeader .phInner .siteLogo.new {
+    max-width: 225px;
+  }
+
+  /* F&B List Block */
+  .pcpFnbblock .pcpfnbCategory ul li {
+    padding: 0 7px;
+  }
+  /*.pcpFnbblock .pcpfnbCategory ul li a{letter-spacing:0.02em;}*/
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead figure {
+    min-height: 225px;
+  }
+  /*.pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols > p{font-size:13px;line-height:19px;padding:0 0 5px;letter-spacing:0.03em;}*/
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols > p {
+    font-size: 13px;
+    line-height: 19px;
+    margin: 0 0 5px;
+    letter-spacing: 0.03em;
+    -webkit-line-clamp: 3;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap {
+    padding: 5px 0 0;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilcwCollft {
+    width: 64px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilcwColrgt {
+    padding-left: 74px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap p {
+    padding: 7px 0;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap p span.strikethrough {
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0 5px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap p span.offerpercent {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnunavail {
+    font-size: 15px;
+    line-height: 17px;
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  /* Order Review */
+  .pcbOrderreview .pcborInner .row {
+    margin: 0 -7px;
+  }
+  .pcbOrderreview .pcborInner .row .col-xs-1,
+  .pcbOrderreview .pcborInner .row .col-xs-2,
+  .pcbOrderreview .pcborInner .row .col-xs-3,
+  .pcbOrderreview .pcborInner .row .col-xs-4,
+  .pcbOrderreview .pcborInner .row .col-xs-5,
+  .pcbOrderreview .pcborInner .row .col-xs-6,
+  .pcbOrderreview .pcborInner .row .col-xs-7,
+  .pcbOrderreview .pcborInner .row .col-xs-8,
+  .pcbOrderreview .pcborInner .row .col-xs-9,
+  .pcbOrderreview .pcborInner .row .col-xs-10,
+  .pcbOrderreview .pcborInner .row .col-xs-11,
+  .pcbOrderreview .pcborInner .row .col-xs-12,
+  .pcbOrderreview .pcborInner .row .form-seatrowGroup .form-rowGroup,
+  .pcbOrderreview .pcborInner .row .form-seatrowGroup .form-seatGroup {
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+  .pcbOrderreview .pcborInner .row .form-seatrowGroup {
+    width: 100%;
+    float: left;
+  }
+  .pcbOrderreview .pcborInner .row .form-seatrowGroup .form-rowGroup {
+    width: 41.66666667%;
+  }
+  .pcbOrderreview .pcborInner .row .form-seatrowGroup .form-seatGroup {
+    width: 58.33333333%;
+  }
+
+  /* Specials Strap */
+  //  .specialsStrap .ssH2{max-width:none;line-height:24px;background-position:0 0;padding-left:30px;margin:0 0 5px;}
+  //  .specialsStrap .ssH2 span{display:inline-block;vertical-align:top;}
+  .specialsStrap .rcBox h3 {
+    max-width: 90px;
+  }
+  .specialsStrap .ssCols {
+    padding: 0 0px;
+  }
+  .specialsStrap .ssCols .ssCol {
+    // padding: 0 5px;
+  }
+  //  .specialsStrap .ssCols.slick-slider.slick-initialized .slick-arrow.slick-prev{left:0;}
+  //  .specialsStrap .ssCols.slick-slider.slick-initialized .slick-arrow.slick-next{right:0;}
+  //  .specialsStrap .columnLeft{flex-flow:column;align-items:flex-start;}
+  //  .specialsStrap > .container > .row{align-items:flex-end;}
+  /*Left Column > F&B Category Accordion*/
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .iconDeliveryMode {
+    height: 31px;
+  }
+}
+
+@media (max-width: 479px) {
+  /* Header */
+  .pageHeader .phInner .siteLogo.new {
+    max-width: 188px;
+  }
+
+  .paymentContent .price-detailBody .pcPrice-detailsblk .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows {
+    padding: 20px 0 0;
+  }
+  .pcbOrderreview .pcborInner .row .showDate-formgroup.col-xs-5 {
+    padding-right: 7px;
+  }
+  /*.pageForm .form-group .showdateGroup{max-width:85%;}*/
+  .pageForm .form-group.seatNogroup {
+    width: 100% !important;
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+  }
+  .pageForm .form-group.seatNogroup .pageForm {
+    max-width: 100%;
+  }
+  .pageForm .form-group .form-control#txtSeatNo {
+    font-size: 14px;
+    padding-left: 8px;
+  }
+  /* Page Content > Panels(Page layout) */
+  /*.pcpCart .pcpcAction .btnswrap .btn.btndefault{font-size:18px;line-height:28px;padding:7px 15px;} Hided16022021*/
+
+  /* F&B List Block */
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead figure {
+    min-height: 192px;
+  }
+
+  /*Confirm F&B Booking*/
+  .pcpfnbConfirmbooking .pcpfnbcbInner .btnswrap {
+    text-align: center;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner .btnswrap .btn.btndefault,
+  .pcpfnbConfirmbooking .pcpfnbcbInner .btnswrap .btn.btnsecondary {
+    display: block;
+  }
+  .pcpfnbConfirmbooking .pcpfnbcbInner .btnswrap .btn.btntext {
+    margin: 15px 0 0;
+  }
+  .pcpfnbConfirmbooking {
+    .pcpfnbcbInner {
+      .btnswrap {
+        padding: 15px 0 0;
+        display: block;
+        .btn {
+          &.btntext {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  /*.pcpCart .pcpBookingsummary .pcpbsInner{padding:0 0 46px;} Hided16022021*/
+  /*** iPhoneX Issue ***/
+  /* Browsers which partially support CSS Environment variables (iOS 11.0-11.2). */
+  /*@supports (padding-bottom: constant(safe-area-inset-bottom)) {
+      .pcpCart .pcpBookingsummary .pcpbsInner {
+          --safe-area-inset-bottom: constant(safe-area-inset-bottom);
+          padding-bottom: calc(46px + var(--safe-area-inset-bottom));
+      }
+      body.latest-ios-devices .pcpCart .pcpBookingsummary .pcpbsInner {
+          --safe-area-inset-bottom: constant(safe-area-inset-bottom);
+          padding-bottom: calc(46px + var(--safe-area-inset-bottom) + 50px);
+      }
+  }*/ /*For IOS safe-area-insert issue - Hided22012021*/
+  /* Browsers which fully support CSS Environment variables (iOS 11.2+). */
+  /*@supports (padding-bottom: env(safe-area-inset-bottom)) {
+      .pcpCart .pcpBookingsummary .pcpbsInner {
+          --safe-area-inset-bottom: env(safe-area-inset-bottom);
+          padding-bottom: calc(46px + var(--safe-area-inset-bottom));
+      }
+      body.latest-ios-devices .pcpCart .pcpBookingsummary .pcpbsInner {
+          --safe-area-inset-bottom: env(safe-area-inset-bottom);
+          padding-bottom: calc(46px + var(--safe-area-inset-bottom) + 50px);
+      }
+  }*/ /*For IOS safe-area-insert issue - Hided22012021*/
+  /*** E.O.iPhoneX Issue ***/
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows .pcpbscrulCollft {
+    width: 52%;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows .pcpbscrulColrgt {
+    width: 48%;
+  }
+  .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  /* F&B Modifier Popup */
+  .fnbmodifierModal .modal-header {
+    height: 175px;
+  }
+  .fnbmodifierModal .modal-header .modalClose {
+    width: 24px;
+    height: 24px;
+    background-size: 10px auto;
+    top: 15px;
+    right: 15px;
+  }
+  .fnbmodifierModal .modal-body {
+    padding: 15px;
+  }
+  .fnbmodifierModal .fnbItemdesc h2 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .fnbmodifierModal.promoffer .fnbItemdesc h2 span .offerpercent {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .fnbmodifierModal.promoffer .fnbItemdesc h2 span .offerpercent .strikethrough {
+    margin: 0 5px;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows h3 {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li .customCheckbox label,
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li .customradio label {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .fnbmodifierModal .fnbmmRowwrap .fnbmmrwRows ul li h4 {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .fnbmodifierModal .fnbQuantity {
+    padding: 7px 15px;
+  }
+  .fnbmodifierModal .fnbQuantity h5 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  /*.fnbmodifierModal .fnbmmAction .btnswrap .btn.btndefault{font-size:18px;line-height:28px;padding:7px 15px;}*/
+
+  /* Order Review */
+  .pcbOrderreview .pcborInner .pcborRows .pcborrBody h3 {
+    letter-spacing: 0;
+  }
+  .pcbOrderreview .pcborInner .row .col-xs-1,
+  .pcbOrderreview .pcborInner .row .col-xs-2,
+  .pcbOrderreview .pcborInner .row .col-xs-3,
+  .pcbOrderreview .pcborInner .row .col-xs-4,
+  .pcbOrderreview .pcborInner .row .col-xs-5,
+  .pcbOrderreview .pcborInner .row .col-xs-6,
+  .pcbOrderreview .pcborInner .row .col-xs-7,
+  .pcbOrderreview .pcborInner .row .col-xs-8,
+  .pcbOrderreview .pcborInner .row .col-xs-9,
+  .pcbOrderreview .pcborInner .row .col-xs-10,
+  .pcbOrderreview .pcborInner .row .col-xs-11,
+  .pcbOrderreview .pcborInner .row .col-xs-12 {
+    width: 100%;
+  }
+  .pcbOrderreview .pcborInner .row .col-xs-7,
+  .pcbOrderreview .pcborInner .row .form-seatrowGroup .form-seatGroup {
+    width: 55%;
+    padding-left: 3px;
+  }
+  .pcbOrderreview .pcborInner .row .col-xs-5,
+  .pcbOrderreview .pcborInner .row .form-seatrowGroup .form-rowGroup {
+    width: 45%;
+    padding-right: 3px;
+  }
+  .pcbOrderreview .pcborInner .row .col-xs-4 {
+    width: 42%;
+  }
+  .pageForm .bootstrap-select .dropdown-toggle {
+    font-size: 14px;
+    padding-right: 25px;
+    padding-left: 8px;
+  }
+  .pageForm .bootstrap-select .dropdown-toggle .caret {
+    right: 2px;
+    background-size: 14px auto;
+    margin-top: -3px;
+  }
+  /* Order Review > Add  Tips */
+  .pcbOrderreview .pcborInner .pcborRows.rowAddtips .pcborrBody .ratInner ul li .roundBoxshadowed {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 5px;
+  }
+  /* Order Review > User(Your) Details */
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .customCheckbox label {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .customCheckbox label i {
+    top: 0;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .rudPasswprd .form-group .form-control {
+    padding-right: 100px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowUserdetails .pcborrBody .rudPasswprd .form-group .btnswrap {
+    width: 90px;
+  }
+  /* Order Review > Alcohol Info and Terms & Conditions  */
+  .pcbOrderreview .pcborInner .pcborRows.rowBottom .pcborrBody .customCheckbox label {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .pcbOrderreview .pcborInner .pcborRows.rowBottom .pcborrBody .customCheckbox label i {
+    top: 0;
+  }
+
+  /* Gift card changes */
+  .paymentMethod-cont .panel-default > .panel-heading + .panel-collapse > .panel-body.giftCard-body .btnswrap .btn.btndefault {
+    line-height: 20px;
+    min-width: 95px;
+  }
+  .paymentMethod-cont .panel-default > .panel-heading + .panel-collapse > .panel-body.giftCard-body .pageForm .form-control {
+    max-width: 100%;
+  }
+  .paymentMethod-cont .panel-default > .panel-heading + .panel-collapse > .panel-body.giftCard-body .form-group > p.success-txt {
+    padding-bottom: 15px;
+  }
+  .pcbOrderreviewwrap .pcpCart .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows .pcpPrice .removeGC {
+    margin-top: -8px;
+  }
+
+  /*Header > Location*/
+  .pageHeader .phInner .phiRight .pcpLocation {
+    min-width: 10px;
+    max-width: 200px;
+  }
+
+  .pageHeader .pcpLocation .pcplDropdown .pcplddHead a span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  /* Specials Strap */
+  .specialsStrap > .container > .row > .col-7,
+  .specialsStrap > .container > .row > .col-5 {
+    width: 100%;
+  }
+  .specialsStrap .rcBox h3 {
+    max-width: 50%;
+  }
+  .specialsStrap .columnRight {
+    display: block;
+  }
+  .specialsStrap .columnRight .rcBox.rcbColumn {
+    display: block;
+    @include cssBoxShadow(none);
+    text-align: center;
+  }
+  .specialsStrap .ssCols {
+    padding: 0 0px;
+  }
+  /*Left Column > F&B Category Accordion*/
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .iconDeliveryMode {
+    margin-right: 5px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li.fnbDeliveryInSeat .pcpfnbilCols .btnswrap .iconDeliveryMode {
+    width: 23px;
+    background-size: 23px auto;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li.fnbPickup .pcpfnbilCols .btnswrap .iconDeliveryMode {
+    width: 25px;
+    background-size: 25px auto;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .noteDeliveryMode {
+    font: 12px/13px $fontB;
+  }
+}
+
+@media (max-width: 414px) {
+  /* F&B List Block */
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead figure {
+    min-height: 165px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap p {
+    display: block;
+    width: 100%;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary {
+    display: block;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnunavail {
+    display: block;
+  }
+}
+
+@media (max-width: 383px) {
+  /* Header > New Logo */
+  .pageHeader .phInner .siteLogo.new {
+    max-width: 145px;
+  }
+  /*Header > Location*/
+  .pageHeader .phInner .phiRight .pcpLocation {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 374px) {
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap p {
+    width: 100% !important;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary {
+    float: left !important;
+    margin-top: 5px !important;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnunavail {
+    float: left;
+    margin-top: 5px;
+  }
+  /*Left Column > F&B Category Accordion*/
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap {
+    position: relative;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap p {
+    float: none;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .btn.btnprimary {
+    margin-left: 35px;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .iconDeliveryMode {
+    float: none;
+    margin: 5px 0 0;
+    position: absolute;
+    left: 0;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li.fnbDeliveryInSeat .pcpfnbilCols .btnswrap .iconDeliveryMode {
+    width: 23px;
+    background-size: 23px auto;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li.fnbPickup .pcpfnbilCols .btnswrap .iconDeliveryMode {
+    width: 25px;
+    background-size: 25px auto;
+  }
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibBody .pcpfnbItemlist ul li .pcpfnbilCols .btnswrap .noteDeliveryMode {
+    text-align: left;
+  }
+}
+
+@media (max-width: 359px) {
+  /* F&B List Block */
+  .pcpFnbblock .pcpfnbCategorylist > ul > li > .pcpfnbiBox .pcpfnbibHead figure {
+    min-height: 145px;
+  }
+
+  .pcbOrderreview .pcborInner .row .col-xs-7,
+  .pcbOrderreview .pcborInner .row .form-seatrowGroup .form-seatGroup {
+    width: 52%;
+    padding-right: 4px;
+  }
+  .pcbOrderreview .pcborInner .row .col-xs-5,
+  .pcbOrderreview .pcborInner .row .form-seatrowGroup .form-rowGroup {
+    width: 47%;
+  }
+  .pcbOrderreview .pcborInner .row .col-xs-4 {
+    width: 44%;
+  }
+  .pageForm .bootstrap-select .dropdown-toggle {
+    font-size: 13px;
+    padding-left: 5px;
+  }
+  .pageForm .form-group .form-control#txtSeatNo {
+    font-size: 13px;
+    padding-left: 5px;
+  }
+  .pageForm .form-group .form-control#txtSeatNo::-webkit-input-placeholder {
+    font-size: 13px;
+  }
+  .pageForm .form-group .form-control#txtSeatNo::-moz-placeholder {
+    font-size: 13px;
+  }
+  .pageForm .form-group .form-control#txtSeatNo:-ms-input-placeholder {
+    font-size: 13px;
+  }
+  .pageForm .form-group .form-control#txtSeatNo:-moz-placeholder {
+    font-size: 13px;
+  }
+  /*26-08-2020*/
+  .pcpBookingsummary.pcpconfirmation .pcpbsInner .pcpbsContainer .pcpbscRows .itemCounter {
+    max-width: 60px;
+    height: 20px;
+    padding: 0px 15px;
+    max-width: 40px;
+    padding: 0 5px;
+  }
+
+  .pcpLocation .pcplDropdown .pcplddBody .pclList ul li a {
+    line-height: 22px;
+  }
+  .pcpCart.promoffer .pcpBookingsummary .pcpbsInner .pcpbsContainer .pcpbscRows .pcpbscrulColrgt .offerpercent .strikethrough {
+    margin: 0 5px;
+  }
+
+  /*Header > Location*/
+  .pageHeader .phInner .phiRight .pcpLocation {
+    max-width: 150px;
+  }
+  /*Member Login*/
+  .switchStrap .switchMemberLogin .smlInner .smliCols:not(:first-child) p {
+    max-width: 95px;
+  }
+  /* Select Date, Movie & Time*/
+  .react-swipeable-view-container .experienceButton {
+    font-size: 14px;
+    margin: 0 0 0 5px;
+  }
+  .react-swipeable-view-container .experienceButton img {
+    width: 45px;
+  }
+}
+
+/*@media (max-width:479px) and (min-height:480px) {
+  /* F&B Modifier Popup * /
+  .fnbmodifierModal .modal-content{/*padding:175px 0 96px; Hided01102020* /padding:0 0 96px;}
+  .fnbmodifierModal .modal-footer{height:96px;}
+  } //Hided15102020*/

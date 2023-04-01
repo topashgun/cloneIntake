@@ -1,0 +1,306 @@
+/* 
+	** error.css ** 
+*/
+@import "variables", "mixin";
+
+/* 404 and 500 page start */
+.ss-errorcont {
+  padding-top: 82px;
+}
+.ss-errorcont .ss-error-inner {
+  text-align: center;
+}
+.ss-errorcont .ss-error-inner figure.error-logo {
+  display: inline-block;
+}
+.ss-errorcont .ss-error-inner figure.error-logo img {
+  width: 150px;
+  height: 150px;
+}
+.ss-errorcont .ss-error-inner h2 {
+  font: 75px/75px $fontB;
+  color: $colorSecondary1;
+  text-transform: uppercase;
+}
+.ss-errorcont .ss-error-inner p {
+  font: 30px/34px $fontSb;
+  color: $colorSecondary1;
+  padding-top: 42px;
+  padding-bottom: 40px;
+}
+.ss-errorcont .ss-error-inner p span {
+  font: 26px/30px $fontM;
+  display: block;
+  padding-top: 14px;
+}
+.ss-errorcont .ss-error-inner .btnswrap {
+  padding-top: 52px;
+}
+.ss-errorcont .ss-error-inner .btnswrap a.btn {
+  font: 20px/20px $fontB;
+  min-width: 236px;
+  padding: 16px 10px;
+}
+
+.error-500page {
+}
+.ss-errorcont .ss-error-inner .error-500page {
+}
+.ss-errorcont .ss-error-inner .error-500page figure.error-logo img {
+  width: 138px;
+  height: 138px;
+}
+.ss-errorcont .ss-error-inner .error-500page .btnswrap p {
+  font: 24px/24px $fontR;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+}
+.ss-errorcont .ss-error-inner .error-500page .btnswrap a.btn {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.ss-errorcont .ss-error-inner .error-500page h2 {
+  padding-top: 15px;
+}
+
+.maintanence-page {
+}
+.ss-errorcont .ss-error-inner .error-500page.maintanence-page figure.error-logo img {
+  width: 125px;
+  height: 125px;
+}
+.social-blk {
+}
+.ss-errorcont .ss-error-inner .error-500page .social-blk {
+  padding-top: 20px;
+}
+.ss-errorcont .ss-error-inner .error-500page .social-blk p {
+  font: 23px/23px $fontR;
+}
+.ss-errorcont .ss-error-inner .error-500page .social-blk ul {
+  font-size: 0;
+  margin: 0 -15px;
+}
+.ss-errorcont .ss-error-inner .error-500page .social-blk ul li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+}
+.ss-errorcont .ss-error-inner .error-500page .social-blk ul li a {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+.ss-errorcont .ss-error-inner .error-500page .social-blk ul.iconsFontAwesome {
+  li {
+    a {
+      font-size: 22px;
+      color: $colorBase;
+      background: $colorSecondary1;
+      background: $colorPrimary1;
+      @include cssBorderRadius(25px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &.iconInstagram {
+      a {
+        font-size: 24px;
+      }
+    }
+    &.iconYoutube {
+      a {
+        font-size: 24px;
+      }
+    }
+  }
+}
+.ss-errorcont .ss-error-inner .error-500page .social-blk ul.iconsAsSVG {
+  li {
+    a {
+      img {
+        vertical-align: top;
+      }
+    }
+  }
+}
+.ss-errorcont .ss-error-inner .error-500page .social-blk ul li.fb a {
+  background: url("../assets/images/maintenancePage/facebook.png") no-repeat;
+  background-size: 100%;
+}
+.ss-errorcont .ss-error-inner .error-500page .social-blk ul li.tw a {
+  background: url("../assets/images/maintenancePage/twitter.png") no-repeat;
+  background-size: 100%;
+}
+.ss-errorcont .ss-error-inner .error-500page .social-blk ul li.igm a {
+  background: url("../assets/images/maintenancePage/instagram.png") no-repeat;
+  background-size: 100%;
+}
+.ss-errorcont .ss-error-inner .error-500page .social-blk ul li.ytube a {
+  background: url("../assets/images/maintenancePage/youtube.png") no-repeat;
+  background-size: 100%;
+}
+
+@media (max-width: 1919px) {
+  .ss-errorcont {
+    padding-top: 50px;
+  }
+  .ss-errorcont .ss-error-inner h2 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .ss-errorcont .ss-error-inner p {
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .ss-errorcont .ss-error-inner p span {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .ss-errorcont .ss-error-inner .btnswrap {
+    padding-top: 40px;
+  }
+  .ss-errorcont .ss-error-inner .error-500page .btnswrap p {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .ss-errorcont .ss-error-inner .error-500page h2 {
+    padding-top: 10px;
+  }
+  .ss-errorcont .ss-error-inner .error-500page .social-blk p {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 1599px) {
+  .ss-errorcont .ss-error-inner h2 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .ss-errorcont .ss-error-inner .btnswrap {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 1199px) {
+  .ss-errorcont {
+    padding-top: 30px;
+  }
+  .ss-errorcont .ss-error-inner h2 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .ss-errorcont .ss-error-inner p {
+    font-size: 22px;
+    line-height: 26px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .ss-errorcont .ss-error-inner p span {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .ss-errorcont .ss-error-inner .btnswrap {
+    padding-top: 20px;
+  }
+  .ss-errorcont .ss-error-inner .btnswrap a.btn {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 15px 10px;
+    min-width: 200px;
+  }
+  .ss-errorcont .ss-error-inner .error-500page.maintanence-page figure.error-logo img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 991px) {
+  .ss-errorcont {
+    padding-top: 20px;
+  }
+  .ss-errorcont .ss-error-inner h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .ss-errorcont .ss-error-inner p span {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .ss-errorcont .ss-error-inner .btnswrap {
+    padding-top: 10px;
+  }
+  .ss-errorcont .ss-error-inner .btnswrap a.btn {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 12px 10px;
+    min-width: 150px;
+  }
+  .ss-errorcont .ss-error-inner .error-500page .btnswrap p {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .ss-errorcont .ss-error-inner .error-500page .social-blk p {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .ss-errorcont .ss-error-inner h2 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .ss-errorcont .ss-error-inner p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .ss-errorcont .ss-error-inner p span {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 10px;
+  }
+  .ss-errorcont .ss-error-inner .error-500page .btnswrap p {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .ss-errorcont .ss-error-inner .error-500page .social-blk ul {
+    margin: 0 -5px;
+  }
+  .ss-errorcont .ss-error-inner .error-500page .social-blk ul li {
+    padding: 0 5px;
+  }
+  .ss-errorcont .ss-error-inner .error-500page .social-blk ul li a {
+    width: 40px;
+    height: 40px;
+  }
+  .ss-errorcont .ss-error-inner .error-500page.maintanence-page figure.error-logo img {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 479px) {
+  .ss-errorcont .ss-error-inner h2 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .ss-errorcont .ss-error-inner p {
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .ss-errorcont .ss-error-inner .error-500page .btnswrap p {
+    display: block;
+    padding-bottom: 15px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .ss-errorcont .ss-error-inner .error-500page .social-blk p {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+/* 404 and 500 page end */

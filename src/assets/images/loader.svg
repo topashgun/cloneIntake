@@ -1,0 +1,45 @@
+<svg width="77" height="77" viewBox="0 0 77 77" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+   <g fill="none" fill-rule="evenodd">
+      <g transform="translate(1 1)" stroke-width="2">
+         <rect x="5" y="50" height="15" width="15" class="loaderColor1" rx="1">
+            <animate attributeName="y"
+               begin="0s" dur="1.7s"
+               values="50;5;50;50"
+               calcMode="linear"
+               repeatCount="indefinite" />
+            <animate attributeName="x"
+               begin="0s" dur="1.7s"
+               values="5;27;49;5"
+               calcMode="linear"
+               repeatCount="indefinite" />
+         </rect>
+         <rect x="27" y="5" height="15" width="15" class="loaderColor2" rx="1">
+            <animate attributeName="y"
+               begin="0s" dur="1.7s"
+               from="5" to="5"
+               values="5;50;50;5"
+               calcMode="linear"
+               repeatCount="indefinite" />
+            <animate attributeName="x"
+               begin="0s" dur="1.7s"
+               from="27" to="27"
+               values="27;49;5;27"
+               calcMode="linear"
+               repeatCount="indefinite" />
+         </rect>
+         <rect x="49" y="50" height="15" width="15" class="loaderColor3" rx="1">
+            <animate attributeName="y"
+               begin="0s" dur="1.7s"
+               values="50;50;5;50"
+               calcMode="linear"
+               repeatCount="indefinite" />
+            <animate attributeName="x"
+               from="49" to="49"
+               begin="0s" dur="1.7s"
+               values="49;5;27;49"
+               calcMode="linear"
+               repeatCount="indefinite" />
+         </rect>
+      </g>
+   </g>
+</svg>

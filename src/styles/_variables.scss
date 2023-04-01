@@ -1,0 +1,75 @@
+/*** Variables File ***/
+
+/* Font Variables */
+$fontT: "Poppins-Thin";
+$fontL: "Poppins-Light";
+$fontR: "Poppins-Regular";
+$fontM: "Poppins-Medium";
+$fontSb: "Poppins-SemiBold";
+$fontB: "Poppins-Bold";
+$fontEb: "Poppins-ExtraBold";
+$fontBl: "Poppins-Black";
+
+/* Color Variables */
+$colorBase: #fff; /*Base Color*/
+$colorPrimary1: #b42e34; /*Primary Color 1*/
+$colorPrimary2: #453135; /*Primary Color 2*/
+$colorPrimary3: #98989a; /*Primary Color 3*/
+$colorSecondary1: #000; /*Secondary Color 1*/
+$colorSecondary2: #999a9c; /*Secondary Color 2*/
+$colorP1Disabled: #c3686b; /*Primary1 > Disabled Color*/
+$colorOthers1: #f8f8f8;
+$errorColor: #ffc107;
+$errorTextColor: #000;
+/* Base Colors */
+$bbg: $colorBase; /*Body Background Color*/
+$dbc: #1d1d1d; /*Default Base Color(Dark Color - For text, background, borders etc..)*/
+$dbc1: #808080; /*Default Base Color1(Light COlor - For text, background, borders etc..)*/
+
+/* Primary color */
+$pc1: #000; /*Black*/
+
+/* text color */
+$tw: #fff; /* text color white */
+$tlg: #979797; /* Border color Dark Gray */
+$bc-g: #d1d1d1; /* Border color Gray */
+
+/* Buttons > Default button */
+$dba-bg: $colorPrimary1; /* Default button active background color */
+$dba-fc: $colorBase; /* Default button active font color */
+$dba-bdr: $colorPrimary1; /* Default button active border color */
+
+$dbmo-bg: $colorBase; /*Default button mouse over background color */
+$dbmo-fc: $colorPrimary1; /*Default button mouse over font color */
+$dbmo-bdr: $colorPrimary1; /*Default button mouse over border color */
+
+$dbd-bg: $colorPrimary1; /*Default button disabled background color */
+$dbd-fc: $colorP1Disabled; /*Default button disabled font color */
+$dbd-bdr: $colorPrimary1; /*Default button disabled border color */
+
+// $dbc-bg: #1eaed9; /*Default button click background color | Not Used */
+// $dbc-fc: #fff; /*Default button click font color | Not Used */
+// $dbc-bdr: #1eaed9; /*Default button click border color | Not Used */
+
+/* Primary button */
+$pba-bg: transparent; /*Primary button active background color */
+$pba-fc: $colorPrimary1; /*Primary button active font color*/
+$pba-bdr: $colorPrimary1; /*Primary button active border color*/
+
+$pbmo-bg: $colorPrimary1; /*Primary button mouse over background color */
+$pbmo-fc: $colorBase; /*Primary button mouse over font color */
+$pbmo-bdr: $colorPrimary1; /*Primary button mouse over border color */
+
+/* Primary button */
+$sba-bg: $colorPrimary3; /*Primary button active background color */
+$sba-fc: $colorBase; /*Primary button active font color*/
+$sba-bdr: $colorPrimary3; /*Primary button active border color*/
+
+$sbmo-bg: $colorBase; /*Primary button mouse over background color */
+$sbmo-fc: $colorPrimary3; /*Primary button mouse over font color */
+$sbmo-bdr: $colorPrimary3; /*Primary button mouse over border color */
+
+/*Unavailable Button*/
+$ubmo-bg: rgba(169, 169, 169, 0.0980392); /*Unavailable button moue over background color*/
+$ubmo-fc: rgba(128, 128, 128, 0.5); /*Unavailable button moue over font color*/
+$ubmo-bdr: #a9a9a9; /*Unavailable button moue over border color*/
