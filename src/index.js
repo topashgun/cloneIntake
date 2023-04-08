@@ -13,7 +13,7 @@ import "bootstrap-select/dist/css/bootstrap-select.min.css";
 import "slick-carousel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import "./styles/fonts.scss";
 import "./styles/reset.scss";
 import "./styles/style.scss";
 import "./styles/responsive.scss";
