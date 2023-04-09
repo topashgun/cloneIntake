@@ -31,7 +31,7 @@ export async function callEndpoint(methodType, authorisationType, URL, data) {
           dataversion = "en-US";
         }
         axios({
-          url: constant.baseUrl + URL,
+          url: process.env.REACT_APP_baseurl + URL,
           method: methodType,
           headers: {
             Authorization: "Bearer " + getCookie("accessToken"),
@@ -66,12 +66,12 @@ export async function callEndpoint(methodType, authorisationType, URL, data) {
     }
   } else if (authorisationType === "Basic") {
     var headerObject = new Object();
-    headerObject.Authorization = "Basic " + new Buffer.from(constant.username + ":" + constant.password).toString("base64");
+    headerObject.Authorization = "Basic " + new Buffer.from(process.env.REACT_APP_username + ":" + process.env.REACT_APP_password).toString("base64");
     headerObject.appplatform = "WEBSITE";
     headerObject.appversion = "1.0.0";
     return new Promise((resolve, reject) => {
       axios({
-        url: constant.baseUrl + "" + URL,
+        url: process.env.REACT_APP_baseurl + "" + URL,
         method: methodType,
         headers: headerObject,
         data: data,
@@ -92,12 +92,12 @@ export async function getAccessToken(username, password, keepmesignedin = true) 
   return new Promise((resolve, reject) => {
     axios({
       //url: "https://apidevhedged.influx.co.in/api/v1/users/login",
-      url: constant.baseUrl + "user/v1/token",
+      url: process.env.REACT_APP_baseurl + "user/v1/token",
       method: "POST",
       data: data,
       auth: {
-        username: constant.username,
-        password: constant.password,
+        username: process.env.REACT_APP_username,
+        password: process.env.REACT_APP_password,
       },
     })
       .then((response) => {
@@ -112,17 +112,17 @@ export async function getAccessToken(username, password, keepmesignedin = true) 
 }
 
 async function getRefreshToken() {
-  var headerDetails = "Basic " + Buffer.from(constant.username + ":" + constant.password).toString("base64");
+  var headerDetails = "Basic " + Buffer.from(process.env.REACT_APP_username + ":" + process.env.REACT_APP_password).toString("base64");
   var data = new Object();
   data.refreshToken = getCookie("refreshToken");
   return new Promise(async (resolve, reject) => {
     axios({
       //url: "https://apidevshowplaceicon.influx.co.in/api/v1/users/refreshToken",
-      url: constant.baseUrl + "user/v1/token/refresh",
+      url: process.env.REACT_APP_baseurl + "user/v1/token/refresh",
       method: "POST",
       auth: {
-        username: constant.username,
-        password: constant.password,
+        username: process.env.REACT_APP_username,
+        password: process.env.REACT_APP_password,
       },
       data: data,
     })
@@ -145,7 +145,7 @@ async function getRefreshToken() {
         if (axios.isCancel(ex)) {
           reject({Cancel: ""});
         } else if (ex.response.data.code != 200 || ex.response.data.message.toLowerCase() == "token invalid") {
-          await getAccessToken(constant.username, constant.password).then((response) => {
+          await getAccessToken(process.env.REACT_APP_username, process.env.REACT_APP_password).then((response) => {
             callEndpoint(methodType, authorisationType, URL, data)
               .then((response) => {
                 resolve(response);
