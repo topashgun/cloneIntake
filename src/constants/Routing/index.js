@@ -1,11 +1,11 @@
-import React, {Suspense, lazy} from "react";
-import {Routes, Route, Outlet, Link, Navigate} from "react-router-dom";
+import React, { Suspense, lazy } from "react";
+import { Routes, Route, Outlet, Link, Navigate } from "react-router-dom";
 import axios from "axios";
-import jQuery, {data, param} from "jquery";
-import {useNavigate} from "react-router-dom";
+import jQuery, { data, param } from "jquery";
+import { useNavigate } from "react-router-dom";
 import * as API from "../../configuration/apiconfig";
 import constant from "../../configuration/config";
-import {Modal} from "bootstrap";
+import { Modal } from "bootstrap";
 import Swal from "sweetalert2";
 import "react-loading-skeleton/dist/skeleton.css";
 import Header from "../../components/Header";
@@ -13,9 +13,9 @@ import Footer from "../../components/Footer";
 import Loader from "../../components/Loader";
 import DeliveredInSeat from "../../assets/images/ic-fnbDeliveryinseat.svg";
 import PickUpDelivery from "../../assets/images/ic-fnbPickup.svg";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {FaShoppingCart, FaBox} from "react-icons/fa";
-import {faCheck, faCommentDollar, faDollarSign, faIdBadge, faMoneyCheckDollar, faPause, faPlus, faSackDollar} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaShoppingCart, FaBox } from "react-icons/fa";
+import { faCheck, faCommentDollar, faDollarSign, faIdBadge, faMoneyCheckDollar, faPause, faPlus, faSackDollar } from "@fortawesome/free-solid-svg-icons";
 const Home = lazy(() => import("../../components/Home"));
 const Menu = lazy(() => import("../../components/Menu"));
 const OrderReview = lazy(() => import("../../components/OrderReview"));
@@ -131,7 +131,7 @@ class Routing extends React.Component {
   }
 
   handleGiftCardResponse = (text) => {
-    this.setState({giftCardResponse: text});
+    this.setState({ giftCardResponse: text });
   };
 
   handleBrowserBackButton = () => {
@@ -159,7 +159,7 @@ class Routing extends React.Component {
       .filter((item) => item.match(/^[a-zA-Z ]*$/i))
       .join("");
     localStorage.setItem("creditCardNameOnCard", value);
-    this.setState({nameOnCard: value});
+    this.setState({ nameOnCard: value });
   };
 
   setParentState = (parentState) => {
@@ -173,7 +173,7 @@ class Routing extends React.Component {
       if (JSON.parse(localStorage.getItem("stateData")) !== null) {
         let bookingId = JSON.parse(localStorage.getItem("stateData")).bookingId;
         let bookingLocation = JSON.parse(localStorage.getItem("stateData")).bookingLocation;
-        this.setState({bookingId, bookingLocation});
+        this.setState({ bookingId, bookingLocation });
       }
     } catch (e) {
       console.log(e);
@@ -610,7 +610,7 @@ class Routing extends React.Component {
     cartData.splice(index, 1);
     let createOrderData = this.state.createOrderData;
     createOrderData.fnb = cartData;
-    this.setState({cartData, createOrderData}, () => {
+    this.setState({ cartData, createOrderData }, () => {
       this.loadStateData();
       //Remove Redemeed Giftcard.
       if (this.state.cartData.length == 0 && this.state.redeemedGiftcards.length > 0) {
@@ -639,7 +639,7 @@ class Routing extends React.Component {
       afterLoginToken.firstname = API.getValueFromCookie("firstname");
       afterLoginToken.lastname = API.getValueFromCookie("lastname");
       this.setState({
-        afterLoginToken: {...this.state.afterLoginToken, ...afterLoginToken},
+        afterLoginToken: { ...this.state.afterLoginToken, ...afterLoginToken },
       });
     } else {
       ////console.log("user logged out");
@@ -666,7 +666,7 @@ class Routing extends React.Component {
         paramCinemaId = this.state.locations[cinemaIndex].cinemaid;
       }
     }
-    this.setState({bookingId: paramBookingId});
+    this.setState({ bookingId: paramBookingId });
     if (params.bookingid != null) {
       localStorage.setItem("bookingURL", "/?bookingid=" + paramBookingId + "&cinemaid=" + paramCinemaId, "");
     }
@@ -1767,7 +1767,7 @@ class Routing extends React.Component {
   };
 
   handleAgeRestrictionFieldsOnChanges = (event, fieldFlag) => {
-    const {maxLength, value, name} = event.target;
+    const { maxLength, value, name } = event.target;
     const [fieldName, fieldIndex] = name.split("-");
 
     let fieldIntIndex = parseInt(fieldIndex, 10);
@@ -1874,7 +1874,7 @@ class Routing extends React.Component {
           } else if (Object.keys(this.state.bookingLocation).length !== 0) {
             bookingTz = this.state.bookingLocation.tz;
           }
-          API.callEndpoint("POST", "Bearer", "cms/v1/currenttime", {tz: bookingTz})
+          API.callEndpoint("POST", "Bearer", "cms/v1/currenttime", { tz: bookingTz })
             .then((response) => {
               this.setState({
                 ageRestrictioncurrenttime: response.data.currenttime,
@@ -1894,7 +1894,7 @@ class Routing extends React.Component {
         } else if (Object.keys(this.state.bookingLocation).length !== 0) {
           bookingTz = this.state.bookingLocation.tz;
         }
-        API.callEndpoint("POST", "Bearer", "cms/v1/currenttime", {tz: bookingTz})
+        API.callEndpoint("POST", "Bearer", "cms/v1/currenttime", { tz: bookingTz })
           .then((response) => {
             ////console.log("response.data.currenttime: " + response.data.currenttime);
             this.setState({
@@ -1989,7 +1989,7 @@ class Routing extends React.Component {
             : (fnbItemData.fnbs_alternateitems && fnbItemData.fnbs_alternateitems.length == 0) ||
               (fnbItemData.fnbs_alternateitems && fnbItemData.fnbs_alternateitems.length > 0 && fnbItemData.id != this.state.fnbItemModifierData.id)
             ? fnbItemData
-            : {...this.state.fnbItemModifierData, modifierGroups: fnbItemData.modifierGroups},
+            : { ...this.state.fnbItemModifierData, modifierGroups: fnbItemData.modifierGroups },
         cartData: stateCartData,
         repeatItemIndex: false,
       },
@@ -2029,7 +2029,7 @@ class Routing extends React.Component {
   modifierModalFnbItemSpecialInstructions = (event) => {
     let tempCartData = this.state.cartData;
     tempCartData[tempCartData.length - 1].specialinstructions = event.target.value;
-    this.setState({cartData: tempCartData});
+    this.setState({ cartData: tempCartData });
   };
 
   //modifierItemQuantity = (event, counterFlag, itemId) => {
@@ -2915,7 +2915,7 @@ class Routing extends React.Component {
         // // //console.log(jsnResponseData);
         this.setState(
           {
-            paymentIframe: {paymentId: paymentId, iframe: strResponseData},
+            paymentIframe: { paymentId: paymentId, iframe: strResponseData },
           },
           () => {
             this.handleLoader(false);
@@ -3008,7 +3008,7 @@ class Routing extends React.Component {
   //handleOrderCheckOut = (orderId, paymentId) => {
   handleOrderCheckOut = () => {
     this.handleLoader(true);
-    this.setState({nameOnCard: " "});
+    this.setState({ nameOnCard: " " });
     ////////console.log("Routing > handleOrderCheckOut()");
     //console.log("Routing > handleOrderCheckOut()");
     //console.log("this.state.paymentIframe.paymentId: " + this.state.paymentIframe.paymentId);
@@ -3032,7 +3032,7 @@ class Routing extends React.Component {
         this.handleLoader(false);
         var confirmationUrl = response.data.url;
         var redirectParams = confirmationUrl.split("/confirmation?");
-        this.setState({redirect: true, confirmationRedirectURL: redirectParams[1]});
+        this.setState({ redirect: true, confirmationRedirectURL: redirectParams[1] });
       })
       .catch((ex) => {
         this.handleLoader(false);
@@ -3499,7 +3499,7 @@ class Routing extends React.Component {
         }
       }
 
-      this.setState({cartData: tempCartData}, () => {
+      this.setState({ cartData: tempCartData }, () => {
         this.loadStateData();
       });
     }
@@ -3665,7 +3665,7 @@ class Routing extends React.Component {
     }
 
     axios({
-      url: process.env.REACT_APP_baseurl+ "user/v1/token",
+      url: process.env.REACT_APP_baseurl + "user/v1/token",
       method: "POST",
       data: data,
       auth: {
@@ -3892,7 +3892,7 @@ class Routing extends React.Component {
         var giftcardData = response.data;
         if (giftcardData.cardNumber && giftcardData.cardNumber == giftcardNumber) {
           var orderId = this.state.orderId;
-          API.callEndpoint("POST", "Bearer", "order/v1/orders/" + orderId + "/giftcard", {giftcardno: giftcardNumber})
+          API.callEndpoint("POST", "Bearer", "order/v1/orders/" + orderId + "/giftcard", { giftcardno: giftcardNumber })
             .then((response) => {
               //console.log("handleGiftcardApply > Giftcard - Payment:");
               //console.log(response.data);
@@ -3918,7 +3918,7 @@ class Routing extends React.Component {
                           //http://localhost:3000/confirmation?id=2b6d5dae-9781-415e-86f6-61e43d3ebebe&status=success
                           var redirectParams = "id=" + orderId + "&status=success";
                           //console.log("redirectParams: " + redirectParams);
-                          this.setState({redirect: true, confirmationRedirectURL: redirectParams});
+                          this.setState({ redirect: true, confirmationRedirectURL: redirectParams });
                         }
                       })
                       .catch((error) => {
@@ -3937,7 +3937,7 @@ class Routing extends React.Component {
             })
             .catch((error) => {
               this.handleLoader(false);
-              this.setState({giftCardResponse: error.error});
+              this.setState({ giftCardResponse: error.error });
               window.addEventListener("message", this.handleMessage);
             });
         }
@@ -4137,7 +4137,7 @@ class Routing extends React.Component {
     //https://apidevshowplaceicon.influx.co.in/order/v1/bookings/cancelbooking
     //WGWLLT6 => a90895d4-efcc-4a18-936c-eebb13c62cbb
     var bookingOrderID = this.state.refundBookingOrderID;
-    API.callEndpoint("POST", "Bearer", "order/v1/bookings/cancelbooking", {id: bookingOrderID})
+    API.callEndpoint("POST", "Bearer", "order/v1/bookings/cancelbooking", { id: bookingOrderID })
       .then((response) => {
         this.handleLoader(false);
         orderCancellationModal.hide();
@@ -4252,7 +4252,7 @@ class Routing extends React.Component {
       .filter((item) => {
         return item.type !== null;
       });
-    this.setState({refundSummaryPaymentMethod});
+    this.setState({ refundSummaryPaymentMethod });
   };
   //populatePaymentType => refundPopulatePaymentType
   refundPopulatePaymentType = (item) => {
@@ -4299,16 +4299,16 @@ class Routing extends React.Component {
   };
 
   render() {
-    let {redirect, orderId, selectDetailsProceed, paymentRedirect} = this.state;
+    let { redirect, orderId, selectDetailsProceed, paymentRedirect } = this.state;
 
     return (
       <>
         {/* Navigate from Payment to Confirmation  */}
         {redirect ? (
           <span>
-            {this.setState({redirect: false})}
+            {this.setState({ redirect: true })}
             {/* <Navigate to={`/confirmation?id=${orderId}`} replace={true} /> */}
-            <Navigate to={`/confirmation?${this.state.confirmationRedirectURL}`} replace={true} />
+            <Navigate to={`/confirmationcheck?${this.state.confirmationRedirectURL}`} replace={true} />
           </span>
         ) : null}
         {/* Navigate from Home(Manual Selection Flow) to Menu  */}
@@ -4320,7 +4320,7 @@ class Routing extends React.Component {
         {/* Navigate from Orderreview to Payment  */}
         {paymentRedirect ? (
           <span>
-            {this.setState({paymentRedirect: false})}
+            {this.setState({ paymentRedirect: false })}
             <Navigate to="/payment" replace={false} />
           </span>
         ) : null}
