@@ -4309,6 +4309,8 @@ class Routing extends React.Component {
             {this.setState({ redirect: true })}
             {/* <Navigate to={`/confirmation?id=${orderId}`} replace={true} /> */}
             <Navigate to={`/confirmationcheck?${this.state.confirmationRedirectURL}`} replace={true} />
+            <Navigate to={`/confirmationcheck123?${this.state.confirmationRedirectURL}`} replace={true} />
+            <Navigate to={`/confirmationcheckabc?${this.state.confirmationRedirectURL}`} replace={true} />
           </span>
         ) : null}
         {/* Navigate from Home(Manual Selection Flow) to Menu  */}
